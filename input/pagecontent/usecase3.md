@@ -234,11 +234,11 @@ _In this new paradigm, Maya's story isn't just one of individual triumph but bec
 ## Existing Data Models from the Family Self-Sufficiency Data Center (FSSDC):
 The Family Self-Sufficiency Data Center (FSSDC) is funded by the U.S. Department of Health and Human Services, Office of Planning, Research and Evaluation, to facilitate use of administrative data by researchers and administrators to improve understanding of, and identify methods for increasing, family well-being. The FSSDC has worked with several state Temporary Assistance for Needy Families (TANF) offices to improve the accessibility and usefulness of TANF administrative data.
 
-![Figure 1. Case and member data](../images/tanfUC3-1.jpg)
+![Figure 1. Case and member data](tanfUC3-1.jpg)
 
-![Table 1. TANF Data Model Inputs](../images/tanfUC3-2.jpg)
+![Table 1. TANF Data Model Inputs](tanfUC3-2.jpg)
 
-![Table 2. Requirements for Using the Data Model](../images/tanfUC3-3.png)
+![Table 2. Requirements for Using the Data Model](tanfUC3-3.png)
 
 
 *Sources (for Data Model/Images Section):

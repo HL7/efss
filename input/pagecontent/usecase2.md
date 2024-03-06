@@ -194,10 +194,10 @@ GET /Address?subject:Group.name=JohnHousehold&state=<YourState>&region=<YourRegi
 
 ```
 ---
-![Tribal TANF](../input/images/tanfUC2-1.jpg)
+![Tribal TANF](../images/tanfUC2-1.jpg)
 
 ### Example of Person Resource Data Model
-![Example of Person Resource Data Model](../input/images/tanfUC2-2.jpg)
+![Example of Person Resource Data Model](../images/tanfUC2-2.jpg)
 
 ### Example for Tribal TANF Person Profile Data Model
 ```

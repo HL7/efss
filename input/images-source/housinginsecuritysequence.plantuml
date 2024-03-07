@@ -1,17 +1,26 @@
 @startuml
-participant Participant as Foo
-actor       Actor       as Foo1
-boundary    Boundary    as Foo2
-control     Control     as Foo3
+participant CareCoordinator as Foo
+collections LifeSet as Foo6
+collections ScreeningSet as Foo7
+
+boundary    FHIR    as Foo3
+participant ProgramSystem as Foo2
+ 
+
+control     HUDCriteria     as Foo4
+
 entity      Entity      as Foo4
-database    Database    as Foo5
-collections Collections as Foo6
-queue       Queue       as Foo7
-Foo -> Foo1 : To actor 
-Foo -> Foo2 : To boundary
-Foo -> Foo3 : To control
-Foo -> Foo4 : To entity
-Foo -> Foo5 : To database
-Foo -> Foo6 : To collections
-Foo -> Foo7: To queue
+
+
+ 
+Foo6 -> Foo : To review Life Set 
+Foo -> Foo7 : To create Screening Set 
+ 
+Foo -> Foo2 : To send Screening Set
+Foo2 -> Foo4 : To evalute Screening Set
+Foo4 -> Foo2 : To return Resulting  Set
+
+Foo2 -> Foo : To return Resulting  Set
+
+ 
 @enduml

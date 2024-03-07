@@ -81,6 +81,8 @@ pages:
     title: Enhancing FHIR for Social Services
   background.md:
     title: Background
+  usecases.md:
+    title: Use Cases    
   usecase1.md:
     title: Housing Insecurity Use Case
   usecase2.md:
@@ -103,6 +105,7 @@ menu:
   Background: 
     Background: background.html
   Use Cases:  
+    Use Cases: usecases.html
     Housing Insecurity Use Case: usecase1.html
     TANF Use Case 2: usecase2.html
     TANF Use Case 3: usecase3.html        

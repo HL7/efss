@@ -1,18 +1,37 @@
 @startuml
 left to right direction
-actor Guest as g
-package Professional {
-  actor Chef as c
-  actor "Food Critic" as fc
+ actor CareCoordinator as carecoordinator
+ actor ProgramSystem as programsystem
+ 
+package EnhancingFHIRForSocialServicesHUD {
+ 
+  usecase "Housing and Urban Development (HUD) Housing Insecurity Use Case" as UC1
+  (Review Life Set) as (Use1)
+  
+  (Use1) <|-- (UC1)
+  (Use2) <|-- (UC1)
+  (Use3) <|-- (Use2)
+  (Create Sreening  Set) as (Use2)
+  (Review Eligibility) as (Use3)
+
 }
-package Restaurant {
-  usecase "Eat Food" as UC1
-  usecase "Pay for Food" as UC2
-  usecase "Drink" as UC3
-  usecase "Review" as UC4
+
+package EnhancingFHIRForSocialServicesTANF {
+  usecase "Temporary Assistance for Needy Families (TANF) Use Case" as UC2
+  (Review Life Set) as (Use4)
+  (Create Sreening  Set) as (Use5)
+  (Review Eligibility) as (Use6)
+  (Use4) <|-- (UC2)
+  (Use5) <|-- (UC2)
+  (Use6) <|-- (Use5)
 }
-fc --> UC4
-g --> UC1
-g --> UC2
-g --> UC3
+
+carecoordinator --> UC1
+carecoordinator --> UC2
+
+programsystem --> UC1
+programsystem --> UC2
+
+
+
 @enduml

@@ -17,7 +17,7 @@ The diagram below presents the new Gravity Conceptual Model (file:///C:/Users/Ke
 
 The diagram below illustrates the scope of this Companion Guide and how it augments the Gravity Conceptual Model in the SDOH Clinical Care Implementation Guide. To separate the concerns, the  Program System, on the left of the diagram, is responsible for enrollment in the social service(s).  The assumption has been made that the Program System may or may not be an FHIR-based system. To support this position, in the United States, over $400 billion of Social Services were delivered by just 3 separate Federal agencies in 2022  using non-FHIR Systems to address housing insecurity, food insecurity, and temporary financial security.
 
-XXX PICTURE - Companion Guide Scope XXX
+![Scope](../images/CompanionGuideScope.png)
 
 The system depicted on the right is a FHIR System that provides Whole Person Care. It represents the SDOH Clinical Care Implementation Guide.
 

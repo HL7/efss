@@ -8,9 +8,9 @@ The work product is a informative Companion Guide (Guide) to the Gravity Project
 ![Methodology](../images/backgroundApproach.png)
 
 * Use cases were developed by Subject Matter Experts from Social Services Domains and these use cases identified the requirements for enhancements to FHIR.
-* Two implementations’ approaches were developed from the Use Cases.
+* Two implementation approaches were developed from the Use Cases.
    * One implementation approach, the Gravity IG  Approach, was developed based on the SDOH Clinical Care 2.1 Implementation Guide.
-   * A Social Services Domain Analysis Model was developed to provide an alternative implementation approach.  A FHIR Analysis Approach was developed as an alternative. 
+   * A Social Services Domain Analysis Model was developed to provide an alternative approach using a FHIR Analysis Approach.
 * Using the above two approaches, a FHIR Realization Model was developed leveraging the functional benefits provided by the Gravity IG Approach and the FHIR Analysis Approach while considering the desired evolution of FHIR as the preferred platform for implementing Whole Person Care.
 
 ### Other Design Considerations

@@ -5,7 +5,7 @@ It is becoming increasingly evident that Social   Determinants(SD) are key facto
 ### The Approach
 The work product is a informative Companion Guide (Guide) to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide using the following approach.
 
-![Methodology](../images/backgroundApproach.png)
+![Methodology](backgroundApproach.png)
 
 * Use cases were developed by Subject Matter Experts from Social Services Domains and these use cases identified the requirements for enhancements to FHIR.
 * Two implementation approaches were developed from the Use Cases.

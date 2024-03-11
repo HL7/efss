@@ -1,13 +1,17 @@
 
 ### Providing Better Outcomes ###
-It is becoming increasingly evident that Social Determinants (SD) are key factors in determining the well-being of an individual and can negatively impact clinical conditions when these social needs are not met. Numerous studies have shown the impact of SD factors. For example, a National Academy of Medicine Report stated that “Medical care is estimated to account for only 10-20 percent of the modifiable contributors to healthy outcomes for a population. The other 80 to 90 percent are sometimes broadly called the “SDoH”. Significant resources are expended by non-clinical organizations to deliver social and human services to address SD needs. For these non-clinical organizations, their work focuses on the person or individual, their social relationships, and providing social services that can improve the well-being of the individual.
+It is becoming increasingly evident that Social   Determinants(SD) are key factors in determining the well-being of an individual and can negatively impact clinical conditions when these social needs are not met. Numerous studies have shown the impact of SD factors. For example, a National Academy of Medicine Report stated that “Medical care is estimated to account for only 10-20 percent of the modifiable contributors to healthy outcomes for a population. The other 80 to 90 percent are sometimes broadly called the “SDoH”. Significant resources are expended by non-clinical organizations to deliver social and human services to address SD needs. For these non-clinical organizations, their work focuses on the person or individual, their social relationships, and providing social services that can improve the well-being of the individual.  Currently, the FHIR standard can be enhanced by improving the use of the standard to represent social constructs such as groups, relationships between individuals,  – this being the primary focus of this informative Companion Guide.
 
 ### The Approach
-The work product is a Companion Guide (Guide) to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide. 
-* Use cases were developed by Subject Matter Experts from Social Services Domains and identified requirements for enhancements to FHIR.
-* An implementation approach (SDOH CC Approach) was developed based on the SDOH Clinical Care 2.1 Implementation Guide.
-* An SS DAM was developed to provide an alternative implementation approach (SS DAM Approach). 
-* Using the above two approaches, the Implementation Guideline was developed leveraging the functional benefits provided by the SDOH CC Approach and the SS DAM Approach.
+The work product is a informative Companion Guide (Guide) to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide using the following approach.
+
+![Methodology](../images/backgroundApproach.png)
+
+* Use cases were developed by Subject Matter Experts from Social Services Domains and these use cases identified the requirements for enhancements to FHIR.
+* Two implementations’ approaches were developed from the Use Cases.
+   * One implementation approach, the Gravity IG  Approach, was developed based on the SDOH Clinical Care 2.1 Implementation Guide.
+   * A Social Services Domain Analysis Model was developed to provide an alternative implementation approach.  A FHIR Analysis Approach was developed as an alternative. 
+* Using the above two approaches, a FHIR Realization Model was developed leveraging the functional benefits provided by the Gravity IG Approach and the FHIR Analysis Approach while considering the desired evolution of FHIR as the preferred platform for implementing Whole Person Care.
 
 ### Other Design Considerations
 **Complementing the SDOH CC IG:** To integrate and complement the SDOH CC IG, this guide scope contains the following two actors. To integrate and complement the SDOH CC IG, this guide scope contains the following two actors.

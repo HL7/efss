@@ -111,9 +111,8 @@ menu:
     Housing Insecurity Use Case: usecase1.html
     TANF Use Case 2: usecase2.html
     TANF Use Case 3: usecase3.html        
-  Guidance:
-    Design Considerations: design.html  
-    Implementer Considerations: implementer.html  
+  Models Evaluated: design.html
+  Model Descriptions: implementer.html  
   Models:
     EFSS Logical Model: logical.html  
     FHIR Analysis Model: fam.html  

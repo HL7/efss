@@ -99,6 +99,8 @@ pages:
     title: FHIR Realization Model       
   logical.md:
     title: EFSS Logical Model       
+  glossary.md:
+    title: Glossary
         
 menu:
   Home: index.html
@@ -115,7 +117,8 @@ menu:
   Models:
     EFSS Logical Model: logical.html  
     FHIR Analysis Model: fam.html  
-    FHIR Realization Model: frm.html             
+    FHIR Realization Model: frm.html
+  Glossary: glossary.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

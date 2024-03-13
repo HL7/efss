@@ -92,7 +92,7 @@ pages:
   implementer.md:
     title: Implementer Considerations      
   design.md:
-    title: Design Considerations  
+    title: Models Evaluated
   fam.md:
     title: FHIR Analysis Model
   frm.md:

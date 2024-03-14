@@ -48,7 +48,7 @@ LifeSet "0..*" - "1..1" Individual
 (LifeSet, Individual) .. Association
 
 class Association {
-   tyoe : Code
+   type : Code
    effectiveTime : Date
    effectiveTiming : Timing
    status : Code

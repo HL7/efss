@@ -93,12 +93,8 @@ pages:
     title: Implementer Considerations      
   design.md:
     title: Models Evaluated
-  fam.md:
-    title: FHIR Analysis Model
-  frm.md:
-    title: FHIR Realization Model       
-  logical.md:
-    title: EFSS Logical Model       
+  fhir_reconciliation.md:
+    title: FHIR Reconciliation
   glossary.md:
     title: Glossary
         
@@ -113,10 +109,7 @@ menu:
     TANF Use Case 3: usecase3.html        
   Models Evaluated: design.html
   Model Descriptions: implementer.html  
-  Models:
-    EFSS Logical Model: logical.html  
-    FHIR Analysis Model: fam.html  
-    FHIR Realization Model: frm.html
+  FHIR Reconciliation: fhir_reconciliation.html
   Glossary: glossary.html
   Artifacts: artifacts.html
 

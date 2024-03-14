@@ -1,4 +1,3 @@
-
 ## SDOH CC IG Model
 The SDOH CC IG Model implementation that was used is based on the Gravity SDOH Clinical Care 2.1 Implementation Guide. This guide can be found at https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare 
 

@@ -1,4 +1,5 @@
 # Glossary
+
 |Term|Definition|
 |---|---|
 |Social Services Domain Analysis Model| |

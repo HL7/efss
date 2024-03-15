@@ -90,18 +90,21 @@ pages:
   usecase3.md:
     title: TANF Use Case 3      
   implementer.md:
-    title: Implementer Considerations      
+    title: Model Descriptions
   design.md:
     title: Models Evaluated
   fhir_reconciliation.md:
     title: FHIR Reconciliation
+  hud_terms.md:
+    title: HUD Terms and Eligibility
+  tribal_tanf_terms.md:
+    title: Tribal TANF Terms and Eligibility
   glossary.md:
     title: Glossary
         
 menu:
   Home: index.html
-  Background: 
-    Background: background.html
+  Background: background.html
   Use Cases:  
     Use Cases: usecases.html
     Housing Insecurity Use Case: usecase1.html
@@ -111,7 +114,10 @@ menu:
   Model Descriptions: implementer.html  
   FHIR Reconciliation: fhir_reconciliation.html
   Glossary: glossary.html
-  Artifacts: artifacts.html
+  Artifacts: 
+    Summary: artifacts.html
+    HUD Terms and Eligibility: hud_terms.html
+    Tribal TANF Terms and Eligibility: tribal_tanf_terms.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

@@ -2,7 +2,7 @@
 The SDOH CC IG Model implementation that was used is based on the Gravity SDOH Clinical Care 2.1 Implementation Guide. This guide can be found at https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare 
 
 ## FHIR Analysis Model
-The FHIR Analysis Model was created from the social services Domain Analysis Model and its implementation complies with the FHIR Standard.
+The FHIR Analysis Model was created from the Social Services Domain Analysis Model and its implementation complies with the FHIR Standard.
 
 Specific functional capabilities present in the model were driven by the following requirements:
 

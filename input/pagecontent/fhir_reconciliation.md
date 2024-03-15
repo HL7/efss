@@ -1,4 +1,4 @@
-# Introduction
+### Introduction
 The FHIR Reconciliation Model is a fusion/integration of the SDOH CC IG Model and the FHIR Analysis Model to create a more effective model for developing and using FHIR to deliver Whole Person Care. 
 The following criteria were used in the process of developing the FHIR Reconciliation Model:
 1. Normalizing the Whole Person Care as much as possible so that providing an aggregated view across the multiple disciplines and domains within each discipline was as seamlessly as possible.
@@ -10,7 +10,7 @@ The following criteria were used in the process of developing the FHIR Reconcili
    2. The services requested and received are not medical interventions, but interventions that address social needs.  
    3. The social service may be delivered to a group and the recipients of those services are a group of individuals. The social service intervention may have different temporal and contextual aspects during the delivery of the service which need to be recognized in the ability to have longitudinal Whole Person Care Records.  
 
-## FHIR Reconciliation Model
+### FHIR Reconciliation Model
 The FHIR Reconciliation Model components are listed below and categorized by the type of FHIR enhancement they represent. A more detailed description of each component is provided in the Artifacts Section.
 
 ### New Resources
@@ -48,7 +48,7 @@ This Companion Guide uses example terminologies for most bindings to Resource pr
 
 **Organization Resource:** The LifeSet Resource provides the ability to have associations between an individual and legal authority such as a Federal, State, or Tribal Nation. Consideration was given to creating a new Resource called Legal Authority. In keeping with the criteria of using existing SDHO CC Implementation or FHIR R4.0.1 Resources, this Companion Guide uses the existing Organization Resource. The valuesets used in the organization.type and the organization.qualification.code bindings may need to be extended. Examples are qualifications for membership in a Tribal Nation and the different types of qualifications one could have regarding US Citizenship.
 
-## Other Considerations
+### Other Considerations
 **CarePlan:** Although the Care Plan should be provided a Whole Person View, as the present scope is defined as the Data to the Program System and Data from the Program System, this capability is out of scope for this Companion Guide.
 
 **RelatedPerson:** Efforts we made to use the RelatedPerson Resource. The recommendation of this Companion Guide was not to use this resource as it represents a concept that is bound to the delivery of clinical services for a singular subject, the Patient, and there we better mechanisms (e.g. LifeSet, Individual) that are better for delivering and supporting Social Services Views.

@@ -99,6 +99,8 @@ pages:
     title: HUD Terms and Eligibility
   tribal_tanf_terms.md:
     title: Tribal TANF Terms and Eligibility
+  artifact_tbd.md:
+    title: Artifact Name TBD
   glossary.md:
     title: Glossary
         
@@ -118,6 +120,7 @@ menu:
     Summary: artifacts.html
     HUD Terms and Eligibility: hud_terms.html
     Tribal TANF Terms and Eligibility: tribal_tanf_terms.html
+    Artifact Name TBD: artifact_tbd.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

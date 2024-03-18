@@ -33,3 +33,5 @@ To deliver a solution for providing WPC in an operational environment is a compl
 A FHIR system capable of determining eligibility for Social Services would be beneficial. This would increase the efficiency for all parties. However, this will be considered in future versions.
 
 **Privacy Policies:** It is assumed that data can flow freely and unencumbered between the FHIR System and the Program System as the implementation of Privacy Policies is out of scope. However, consideration of Privacy Policies will need to be considered in the future.
+
+In the social care space, the word “Patient” has a very specific meaning. It has been identified by the project, as well as others, that not only is the use of this term inaccurate and polarizing in the domains with which we are trying to collaborate, but it may have potential legal concerns as well. This project will continue to collect supporting information for this issue, but it is out of the scope of this work to address it here. 

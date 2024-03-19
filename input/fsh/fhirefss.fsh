@@ -69,28 +69,60 @@ Description: "Life Set is an amalgamation of the persons/groups who constitute t
 * characteristic 0..0
 * member 0..0
 
-Extension: FHIRMembership
-Id: FHIRmembership
-Description: "Membership"
-* extension contains 
-  individual 1..1 MS and 
-  membership 0..1 MS and
-  effectiveTime 0..1 MS and
-  status 0..1 MS and
-  role 0..1 MS and
-  verification 0..1 MS
-* extension[individual].value[x] only  Reference(IndividualRole or Patient) 
-* extension[individual] ^short = "Individual who requires service(s)"  
-* extension[membership].value[x]  only CodeableConcept 
-* extension[membership] ^short = "Type of membership, HUD household for instance"  
-* extension[effectiveTime].value[x] only  Period 
-* extension[effectiveTime] ^short = "When the membership was active"  
-* extension[status].value[x]  only CodeableConcept 
-* extension[status] ^short = "status"  
-* extension[role].value[x]  only CodeableConcept 
-* extension[role] ^short = "Possible role person is as part as it pertains to the type of membershihp, Head of Household for HUD Household"  
-* extension[verification].value[x] only  CodeableConcept 
-* extension[verification] ^short = "Verification status of the membership/eligbility of this individual in set"  
+Extension: FHIRIndividualReference
+// Id: FHIRIndividualReference
+Description: "FHIR Individual Reference"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRIndividualReference"
+* value[x] only  Reference(IndividualRole or Patient) 
+
+Extension: FHIRMembershipType
+Description: "Type of membership, HUD household for instance"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRMembershipType"
+* value[x]  only CodeableConcept 
+
+
+Extension: FHIRMembershipStatus
+Description: "Status of membershipe"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRMembershipStatus"
+* value[x]  only CodeableConcept 
+
+Extension: FHIRMembershipRole
+Description: "Membership role such as head of household"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRMembershipRole"
+* value[x]  only CodeableConcept 
+
+Extension: FHIRMembershipVerification
+Description: "FHIR Membership Verification"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRMembershipVerification"
+* value[x]  only CodeableConcept 
+
+Extension: FHIRMembershipEffectivePeriod
+Description: "FHIR Membership Effective Period"
+* ^url = "http://hl7.eu/fhir/ig/efss/StructureDefinition/FHIRMembershipEffectivePeriod"
+* value[x]  only Period 
+
+// Extension: FHIRMembership
+// Id: FHIRmembership
+// Description: "Membership"
+// * extension contains 
+//   individual 1..1 MS and 
+//   membership 0..1 MS and
+//   effectiveTime 0..1 MS and
+//   status 0..1 MS and
+//   role 0..1 MS and
+//   verification 0..1 MS
+// * extension[individual].value[x] only  Reference(IndividualRole or Patient) 
+// * extension[individual] ^short = "Individual who requires service(s)"  
+// * extension[membership].value[x]  only CodeableConcept 
+// * extension[membership] ^short = "Type of membership, HUD household for instance"  
+// * extension[effectiveTime].value[x] only  Period 
+// * extension[effectiveTime] ^short = "When the membership was active"  
+// * extension[status].value[x]  only CodeableConcept 
+// * extension[status] ^short = "status"  
+// * extension[role].value[x]  only CodeableConcept 
+// * extension[role] ^short = "Possible role person is as part as it pertains to the type of membershihp, Head of Household for HUD Household"  
+// * extension[verification].value[x] only  CodeableConcept 
+// * extension[verification] ^short = "Verification status of the membership/eligbility of this individual in set"  
 
 
 
@@ -100,7 +132,16 @@ Parent: Group
 Title: "FHIR Realization Model for EFSS : Screening Set"
 Description: "Screening Set is a composition of individuals in need of service(s). The focus of the Screening Set is provide an effecient construct for identifying and illustraing the individuals in the composition.  The Screen Set itself is meant to be transaction and temporal in nature.  The Screen Set would be active while the steps taken to acquire the services have been completed. Screenig Set should be viewed as the trigger for acquisition process for the required services but not utilized for the acquisition workflow operations "
 * characteristic 0..0
-* member 0..0
-* extension contains
-    FHIRMembership named membership 1..* MS 
+* member.extension contains
+  FHIRIndividualReference named individual 0..1 MS and
+  FHIRMembershipType named membershipType 0..*  and
+  FHIRMembershipStatus named membershipStatus 0..* and
+  FHIRMembershipRole named membershipRole 0..* and
+  FHIRMembershipVerification named membershipVerification 0..* and
+  FHIRMembershipEffectivePeriod named membershipEffectivePeriod 0..1
 
+Invariant:   FHIRScreeningSetMembershiop-1
+Description: "entity or individual extension needs to be populated"
+Severity:    #error
+// Expression:  "family.exists() or given.exists()"
+// XPath:       "f:given or f:family"

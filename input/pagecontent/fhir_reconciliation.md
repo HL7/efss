@@ -5,7 +5,8 @@ The following criteria were used in the process of developing the FHIR Reconcili
 2. When there were concrete differences between the concepts (Structured Definitions) of the two models, the different concepts were included in the FHIR Reconciliation Model as opposed to either overloading existing concepts with disjoint concepts or embedding a new concept within an existing concept. Examples in the existing FHIR standards are resources dealing with orders (ServiceRequest, DeviceRequest, MedicationRequest, etc.) and with reports (DiagnosisReport, ExplanationofBenefits, ImagingStudy, etc).
 3. The FHIR Reconciliation Model must be backward compatible with the FHIR 4.0.1 Release.  
 4. Whenever possible, if existing SDOH Profiles and FHIR R4.0.1 resources could be extended, then extensions were made to those profiles or new profiles created.
-5. Recognition that the business of  Social Services is different from the business of  Clinical Services.  
+5. Management of resources where contextual and temporal conditions change over time, such as group membership, was considered as it applies to the management and maintenance of FHIR Resources. Consideration is given to having a Resource be defined as a computable operation versus a persistent Resource.
+6. Recognition that the business of  Social Services is different from the business of  Clinical Services.  
    1. Government agencies or non-profit organizations generally provide Social Services. The services are delivered outside of hospitals or the medical system.  
    2. The services requested and received are not medical interventions, but interventions that address social needs.  
    3. The social service may be delivered to a group and the recipients of those services are a group of individuals. The social service intervention may have different temporal and contextual aspects during the delivery of the service which need to be recognized in the ability to have longitudinal Whole Person Care Records.  
@@ -21,27 +22,27 @@ The FHIR Reconciliation Model components are listed below and categorized by the
 **AssistanceProgram Resource:**  There is a difference between the delivery/consumption of Social Services and the delivery/execution of Clinical Procedures. One difference is that social service has a temporal and qualification aspect where the members of the group may change over time while the delivery of the service remains. The metadata about the members who are participants in the AssistanceProgram is different. Additional differences also exist such as the workflow where enrollment, delivery, and payment processes are different than those supported by clinical workflows involving Procedures and Claims Processing.
 
 ### Changes to existing SDOH Profiles
-**SDOH Group Profile:** The existing SDOH Group Profile was modified to enable a reference to the IndividualRole in the Subject Property. In addition, the metadata about membership has been extended to ///// NEED MORE INPUT FROM SEAN.
+**SDOH Group Profile:** The existing SDOH Group Profile was modified to enable a reference to the IndividualRole in the Subject Property. In addition, the metadata about member backbone element has been extended.
 
-**SDOH Condition:** The existing SDOH Condition Profile was modified to enable a reference to the IndividualRole in the Subject Property.
+**SDOH Condition Profile:** The existing SDOH Condition Profile was modified to enable a reference to the IndividualRole in the Subject Property.
 
-**SDOH Goal:** The existing SDOH Goal Profile was modified to enable a reference to the IndividualRole in the Subject Property.
+**SDOH Goal Profile:** The existing SDOH Goal Profile was modified to enable a reference to the IndividualRole in the Subject Property.
 
-**SDOH ServiceRequest:** The existing SDOH ServiceRequest Profile was modified to enable a reference to the IndividualRole in the Subject Property.  
+**SDOH ServiceRequest Profile:** The existing SDOH ServiceRequest Profile was modified to enable a reference to the IndividualRole in the Subject Property.  
 Consideration was given to creating a new resource to differentiate the request for a Social Service, as in done in Medications and Devices, from the generic ServiceRequest. Using the criteria for creating new resources, presently extending the SDOH ServiceRequest appears adequate.
 
-**SDOH Observation:** The existing SDOH Observation Profile was modified to enable a reference to the IndividualRole in the Subject Property.
+**SDOH Observation Profile:** The existing SDOH Observation Profile was modified to enable a reference to the IndividualRole in the Subject Property.
 
-### New SDOH Profiles created
+### New SDOH Profiles Created
 **SDOH CapabilityStatement Profile:** Not every system will support the SDOH Clinical Care Implementation Guide or the Companion Guide. The SDOH CapabilityStatement is provided so that other FHIR systems will be able to determine its capabilities. 
 
-**SDOH Adverse Event:** Individuals can have Adverse Events within the Social Services Domain.  The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Adverse Event Resource to create the SDOH AdverseEvent Profile.
+**SDOH Adverse Event Profile:** Individuals can have Adverse Events within the Social Services Domain.  The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Adverse Event Resource to create the SDOH AdverseEvent Profile.
 
-**SDOH Risk Assessment:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Risk Assessment Resource to create the SDOH RiskAssesment Profile.
+**SDOH Risk Assessment Profile:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Risk Assessment Resource to create the SDOH RiskAssesment Profile.
 
-**SDOH Encounter:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Encounter Resource to create the SDOH Encounter Profile.
+**SDOH Encounter Profile:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Encounter Resource to create the SDOH Encounter Profile.
 
-**SDOH CareTeam:** Individuals can be participants in the Support Team, especially with providing support within Social Services Domains. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base CareTeam Resource to create the SDOH CareTeam Profile.
+**SDOH CareTeam Profile:** Individuals can be participants in the Support Team, especially with providing support within Social Services Domains. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base CareTeam Resource to create the SDOH CareTeam Profile.
 
 ### Changes to Terminologies in existing Profiles and Resources
 This Companion Guide uses example terminologies for most bindings to Resource properties. The may be certain Resource Properties that require a stronger binding than example. This version of Companion Guide has not attempted to address any issues extending these valuesets.

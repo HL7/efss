@@ -1,21 +1,8 @@
 ### Introduction
-The Enhancing FHIR to Address Social Services and Social Determinants Project seeks to extend the use of FHIR to effectively and efficiently support Social Services. The HL7 Gravity Accelerator Program has done significant work in the context of social domains. This guide leverages their work and is a Companion Guide to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide.
-
-FHIR has proven its ability to deliver clinical applications using a Patient-Centric perspective. The US Department for the Administration of Children and Families (ACF), Gravity Pilot Projects, and other initiatives have been developing FHIR-based systems that include the capability to coordinate and manage care that also includes addressing social conditions and social service interventions. A critical goal of this Companion Guide is enhancing FHIR to deliver Whole Person Care (WPC).
-
-Whole Person Care provides a view of an individual’s clinical, behavioral, and social needs and their support network. It is becoming increasingly accepted that these needs must be addressed together to promote well-being and healthy outcomes. Enhancing the FHIR Platform to address social services enables FHIR to incorporate the specific requirements of social services and  Whole Person Care (WPC) into the standard.
-
-ACF and other federal, state, and local agencies and jurisdictions are using FHIR-based systems to assist in delivering better outcomes for their populations by addressing Social Determinant (SD) factors with appropriate and qualified human and social services. These organizations have found that FHIR needs to be improved to provide complete solutions when working with individuals who need social services and with organizations that provide those social services that can improve health outcomes but are not atypical healthcare systems.
-
-Whole Person Care is increasingly recognized as an approach for delivering better outcomes and cost-efficient solutions. The US Federal organizations such as the CDC and Health and Human Services have both strategy statements and initiatives supporting Whole Person Care. Within HHS,  agencies such as CMS, SAMSHA, ACF, and the ONC all have initiatives. States such as California and Arizona have made this a strategic initiative, with California perhaps being the leader. Whole Person Care solutions from a variety of vendors, ranging from those previously focused on clinical to those primarily focused on social services, to those creating new Whole Person Care coordination and case management solutions are being offered.
-
-FHIR, as a platform for developing and delivering interoperability solutions for Whole Person Care, and HL7, as a community focused on bringing participants together to deliver better outcomes,  is the organization best positioned to be the leader for this capability. 
-
-This project objective is to reduce the barriers faced to effectively and efficiently delivering FHIR-based systems that incorporate Whole Person Care social services and social determinants to improve health outcomes.
-
+The Enhancing FHIR to Address Social Services and Social Determinants Project seeks to extend the use of FHIR to support Social Services more effectively and efficiently. The HL7 Gravity Accelerator Program has done significant work in the context of social domains. This guide leverages their work and is a Companion Guide to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide.
+This project's objective is to reduce some of the barriers faced to effectively and efficiently delivering FHIR-based systems that will incorporate social services and social determinants to improve outcomes.
 This Companion Guide is developed under the sponsorship of the HHS Working Group whose mission is “to provide a space for human services sector stakeholders and HL7 experts that focus on non-clinically oriented social risks and needs to define requirements, design, and validate HL7 Implementation Guides for interoperable human services data exchange”. The project and this Companion Guide are focused on the U.S. environment, the basic constructs and interaction patterns may well be applicable outside the U.S. realm.
-
-Enhancing FHIR for Social Services Companion Guide is not meant to be an exhaustive closed loop referral standard between a Community Based Organization (or similar Social Services actor) and a Program (such as ACF’s TANF program, HUDs housing programs) or process standard. There is lots of work already being done and to be done to provide such a complete standard, but it is beyond the scope of this IG. This IG will offer a framework in which such future follow-on work could be derived.
+Enhancing FHIR for Social Services Companion Guide is not meant to be an exhaustive closed loop referral standard between a Community Based Organization (or similar Social Services actor) and a Program (such as ACF’s TANF program, HUDs housing programs) or process standard. There is lots of work already being done and to be done to provide such a complete standard, but it is beyond the scope of this IG. This IG will offer a an enhanced FHIR framework in which such work for this work in the future.
 
 ### Companion Guide Scope
 The diagram below presents the Gravity Conceptual Model. It illustrates the scope of the Companion Guide and how it augments the most recent Gravity Conceptual Model in the SDOH Clinical Care Implementation Guide. To separate the concerns, the  Program System, on the left of the diagram, is responsible for enrollment in the social service(s).  This assumes that the Program System may or may not be a FHIR-based system. To support this position, over $400 billion of Social Services were delivered by just 3 separate Federal U. S. agencies in 2022 using non-FHIR Systems addressing housing insecurity, food insecurity, and temporary financial security.
@@ -25,6 +12,19 @@ The diagram below presents the Gravity Conceptual Model. It illustrates the scop
 The system depicted on the right is a FHIR System that provides Whole Person Care. It represents the SDOH Clinical Care Implementation Guide.
 
 The Program System depicted on the left may or may not be FHIR-based. The assumption has been made that it is not an FHIR-based system. To support this assumption, in the United States, just three federal agencies delivered over $400 billion of Social Services in 2022 using non-FHIR systems to address housing and food insecurity and temporary financial security.
+
+### Out of Scope ##
+To deliver a solution for providing WPC in an operational environment is a complex endeavor. This Guide does not address other necessary functional requirements.  
+
+**Implementation of Workflow:** This Guide does not attempt to define an implementation approach for exchanging data between the FHIR-based system and the Agency System. Several patterns are available and analysis and recommendations will be deferred to a later publication.   
+
+**Eligibility for a Social Services Program:** Some FHIR systems can identify the appropriate specific program to address the specific social need or risk. This specific version of the Companion Guide assumes that the Program System will determine the appropriate social service based on its eligibility rules. Future versions may include the scope where computable eligibility requirements may be available to the FHIR system and recommendations for specific social services may be recommended.
+
+A FHIR system capable of determining eligibility for Social Services would be beneficial. This would increase the efficiency for all parties. However, this will be considered in future versions.
+
+**Privacy Policies:** It is assumed that data can flow freely and unencumbered between the FHIR System and the Program System as the implementation of Privacy Policies is out of scope. However, consideration of Privacy Policies will need to be considered in the future.
+
+In the social care space, the word “Patient” has a very specific meaning. It has been identified by the project, as well as others, that not only is the use of this term inaccurate and polarizing in the domains with which we are trying to collaborate, but it may have potential legal concerns as well. This project will continue to collect supporting information for this issue, but it is out of the scope of this work to address it here. 
 
 ### Dependencies on Other IGs
 

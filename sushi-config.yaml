@@ -83,12 +83,6 @@ pages:
     title: Background
   usecases.md:
     title: Use Cases    
-  usecase1.md:
-    title: Housing Insecurity Use Case
-  usecase2.md:
-    title: TANF Use Case 2
-  usecase3.md:
-    title: TANF Use Case 3      
   implementer.md:
     title: Model Descriptions
   design.md:
@@ -107,11 +101,7 @@ pages:
 menu:
   Home: index.html
   Background: background.html
-  Use Cases:  
-    Use Cases: usecases.html
-    Housing Insecurity Use Case: usecase1.html
-    TANF Use Case 2: usecase2.html
-    TANF Use Case 3: usecase3.html        
+  Use Cases: usecases.html 
   Models Evaluated: design.html
   Model Descriptions: implementer.html  
   FHIR Reconciliation: fhir_reconciliation.html

@@ -16,29 +16,33 @@ Specific functional capabilities present in the model were driven by the followi
 
 * Digital information exchanged between an FHIR System and a Program System may require some transformation.  
 
-**Social Service Domain Analysis Model**
+#### Social Service Domain Analysis Model
 
-Based on the above requirements, the following social services Domain Analysis Model was Developed. **(Can we make this a single figure)**
+Based on the above requirements, the following social services Domain Analysis Model was Developed. 
 
-Need figures from EFSS model in prior version.
+<figure>
+{%include efssls.svg%}
+<figcaption><b>Figure 1: Logical Model for Enhancing FHIR for Life Set</b></figcaption>
+</figure>
+<br clear="all" />
 
-Given the above, the following is this Guide’s guidance.
+<figure>
+{%include efssss.svg%}
+<figcaption><b>Figure 1: Logical Model for Enhancing FHIR for Screening Set</b></figcaption>
+</figure>
+<br clear="all" />  
 
-Insert Diagram of FHIR Model
+
 
 In the above, there are new proposed FHIR Resources:
 
-**LifeSet Resource:** LifeSet Resource provides the ability to define and operate on associations between individuals, individuals and organizations, and between individuals and governing authorities. Making this ability a "first-class" citizen is critical in multiple ways ranging from understanding relationships by end users to determining compliance of eligibility for social services.
+**LifeSet Concept:** LifeSet Resource provides the ability to define and operate on associations between individuals, individuals and organizations, and between individuals and governing authorities. Making this ability a "first-class" citizen is critical in multiple ways ranging from understanding relationships by end users to determining compliance of eligibility for social services.
 
-**ScreeningSet Resource:** A collection of individuals or cohort in social services is not dynamic. Factors influencing this dynamic are both contextual and temporal. The context itself has several different factors. For example, delivering a social service to a household may have eligibility requirements for the individuals, and the relationships between individuals may change (death, marriage).
+**ScreeningSet Concept:** A collection of individuals or cohort in social services is not dynamic. Factors influencing this dynamic are both contextual and temporal. The context itself has several different factors. For example, delivering a social service to a household may have eligibility requirements for the individuals, and the relationships between individuals may change (death, marriage).
 
-**Individual:** To receive social services, a person is not required to be a patient. Subjects in the LifeSet Resource can be subjects of the Individual resource. This resource is provided because Patient Resource:
+**IndividualRole Concept:** To receive social services, a person is not required to be a patient. Subjects in the LifeSet Resource can be subjects of the Individual resource. This resource is provided because Patient Resource:
 1. Overloads the semantics of the subject in the LifeSet Resource 
 2. There are other constraining properties of the Patient Property such as cardinality constraints that may require workarounds.
 3. From a logical model, it has an equivalency to the same relationship between the person resource as the present patient resource has with person.
 
-**Legal Authority:** The relationship of an individual to a legal authority is critical to understanding eligibility for social services. Examples are the status of an individual as a US citizen or status as a member of a Tribal Nation.
-
-**To be added:**
-Modifications to existing SDOC CC IG profiles: Group ( we should look at parameterized Profiles), all SDOH profiles that have an subject need to have a Reference to PersonRole / Individual), others tbd
-
+**Legal Authority Concept:** The relationship of an individual to a legal authority is critical to understanding eligibility for social services. Examples are the status of an individual as a US citizen or status as a member of a Tribal Nation.

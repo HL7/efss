@@ -42,7 +42,7 @@ ScreeningSet "0..*" - "1..1" Individual
 (ScreeningSet, Individual) .. Membership
 
 class Membership {
-   tyoe : Code
+   type : Code
    effectiveTime : Date
    effectiveTiming : Timing
    status : Code

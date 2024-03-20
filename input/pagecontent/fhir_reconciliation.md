@@ -20,38 +20,3 @@ The FHIR Realization Model components are listed below and categorized by the ty
 **LifeSet Resource:** The LifeSet Resource provides the function capability to make a first-class citizen out of the relationships between an individual and other individuals, between an individual and organizations, and between an individual and legal entities. The ability to computationally compute these relationships provides those working in the social services domains, from delivering social service applications by understanding the appropriate context and temporality of the relationships to those care coordinators and case managers who need to track and measure the social services received by an individual to understand if these interventions were able to achieve the appropriate goals and outcomes.
 
 **AssistanceProgram Resource:**  There is a difference between the delivery/consumption of Social Services and the delivery/execution of Clinical Procedures. One difference is that social service has a temporal and qualification aspect where the members of the group may change over time while the delivery of the service remains. The metadata about the members who are participants in the AssistanceProgram is different. Additional differences also exist such as the workflow where enrollment, delivery, and payment processes are different than those supported by clinical workflows involving Procedures and Claims Processing.
-
-### Changes to existing SDOH Profiles
-**SDOH Group Profile:** The existing SDOH Group Profile was modified to enable a reference to the IndividualRole in the Subject Property. In addition, the metadata about member backbone element has been extended.
-
-**SDOH Condition Profile:** The existing SDOH Condition Profile was modified to enable a reference to the IndividualRole in the Subject Property.
-
-**SDOH Goal Profile:** The existing SDOH Goal Profile was modified to enable a reference to the IndividualRole in the Subject Property.
-
-**SDOH ServiceRequest Profile:** The existing SDOH ServiceRequest Profile was modified to enable a reference to the IndividualRole in the Subject Property.  
-Consideration was given to creating a new resource to differentiate the request for a Social Service, as in done in Medications and Devices, from the generic ServiceRequest. Using the criteria for creating new resources, presently extending the SDOH ServiceRequest appears adequate.
-
-**SDOH Observation Profile:** The existing SDOH Observation Profile was modified to enable a reference to the IndividualRole in the Subject Property.
-
-### New SDOH Profiles Created
-**SDOH CapabilityStatement Profile:** Not every system will support the SDOH Clinical Care Implementation Guide or the Companion Guide. The SDOH CapabilityStatement is provided so that other FHIR systems will be able to determine its capabilities. 
-
-**SDOH Adverse Event Profile:** Individuals can have Adverse Events within the Social Services Domain.  The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Adverse Event Resource to create the SDOH AdverseEvent Profile.
-
-**SDOH Risk Assessment Profile:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Risk Assessment Resource to create the SDOH RiskAssesment Profile.
-
-**SDOH Encounter Profile:** Individuals can have Encounters within the Social Services Domain. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base Encounter Resource to create the SDOH Encounter Profile.
-
-**SDOH CareTeam Profile:** Individuals can be participants in the Support Team, especially with providing support within Social Services Domains. The ability to have a reference to the Individual Resource in the Subject Property has been added to the base CareTeam Resource to create the SDOH CareTeam Profile.
-
-### Changes to Terminologies in existing Profiles and Resources
-This Companion Guide uses example terminologies for most bindings to Resource properties. The may be certain Resource Properties that require a stronger binding than example. This version of Companion Guide has not attempted to address any issues extending these valuesets.
-
-**Organization Resource:** The LifeSet Resource provides the ability to have associations between an individual and legal authority such as a Federal, State, or Tribal Nation. Consideration was given to creating a new Resource called Legal Authority. In keeping with the criteria of using existing SDHO CC Implementation or FHIR R4.0.1 Resources, this Companion Guide uses the existing Organization Resource. The valuesets used in the organization.type and the organization.qualification.code bindings may need to be extended. Examples are qualifications for membership in a Tribal Nation and the different types of qualifications one could have regarding US Citizenship.
-
-### Other Considerations
-**CarePlan:** Although the Care Plan should be provided a Whole Person View, as the present scope is defined as the Data to the Program System and Data from the Program System, this capability is out of scope for this Companion Guide.
-
-**RelatedPerson:** Efforts we made to use the RelatedPerson Resource. The recommendation of this Companion Guide was not to use this resource as it represents a concept that is bound to the delivery of clinical services for a singular subject, the Patient, and there we better mechanisms (e.g. LifeSet, Individual) that are better for delivering and supporting Social Services Views.
-
-**Linking to Person, Identity of a Person:** Many systems today that support HL7 Standards use the Person Resource to identify different roles a Person can have in a healthcare system. Examples are Patient, Participant, and others. This implementation pattern is beyond the scope of this Companion Guide, but it is assumed that is will be utilized by many solution.

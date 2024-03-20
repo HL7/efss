@@ -1,6 +1,13 @@
 Two Use Cases are provided that have been used to determine what functionality the FHIR System needs to support to address Social Services. The Whole Person Care View scope of these Use Cases has been simplified to only factors specific to Social Services and do not include other clinical or behavioral considerations.
 
+### Use Case
+{%include housinginsecurityusecase.svg%}
+
+### Sequence 
+{%include housinginsecuritysequence.svg%}
+
 ### Housing Insecurity (HUD)
+
 The Housing Insecurity Use Case is driven by the need to provision new housing for a child because her present housing needs to be addressed because of her present housing needs to change. Incorporated in the description is the possible requirement of the need to change the guardian for the children involved, although it has not been identified in the two use cases.
 
 Abby McIntyre is a 12-year-old female and Andy Smith, her 6-year-old half-brother, are living with her grandmother, their legal guardian. Unfortunately, her grandmother has recently been given a medical diagnosis that makes it important for alternative guardianship to be prepared for should the grandmother no longer be able to serve in this role. During a recent interview with Nancy Smith, a social worker with the child welfare agency who is currently working with Abby McIntyre to establish an alternative guardianship, it was discovered that her uncle, Ben Jameson, with whom she is close, has housing insecurity issues that would preclude him from being named her next guardian. Ben has previously been registered in the local HMIS system. Nancy has determined it should be a goal in Abby’s care plan to reduce Ben’s housing insecurity so that he can take on her care should her grandmother no longer be able to house and care for her.  

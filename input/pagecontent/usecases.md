@@ -1,9 +1,8 @@
 Two Use Cases are provided that have been used to determine what functionality the FHIR System needs to support to address Social Services. The Whole Person Care View scope of these Use Cases has been simplified to only factors specific to Social Services and do not include other clinical or behavioral considerations.
 
-### Use Case
-{%include housinginsecurityusecase.svg%}
+The following is a generic sequencing diagram that is applicable across the use cases described below.
 
-### Sequence 
+### Use Case Sequence 
 {%include housinginsecuritysequence.svg%}
 
 ### Housing Insecurity (HUD)

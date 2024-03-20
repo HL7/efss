@@ -20,7 +20,12 @@ The second FHIR Model evaluated was a design where all individuals of the Use Ca
 
 The issue encountered with this approach was there was no effective way to capture or discover interpersonal relationships. For example, relationships such as grandmother/granddaughter or guardian/ward either are difficult to capture, discover, and display. Developing processes to compute on these relationships is difficult at best.  
 
-For this model, capturing interpersonal relationships the pattern deployed was, in the Patient Resource, to use the contact backbone property and within that to use the relationship attribute.  (NEED More DETAILED REASONS WHY THIS IS PROBLEMATIC)
+For this model, capturing interpersonal relationships the pattern deployed was, in the Patient Resource, to use the contact backbone property and within that to use the relationship attribute. 
+
+As this design approach was implemented, other concerns of this approach were revealed such as:
+* The computability of an association was required between an individual and an organization.
+* The relationships to legal authorities such as the US government of a Tribal Nation, were distinct types of association.
+* The use of the Procedure Resources as the intervention to address a social need was not appropriate.
 
 ### FHIR Analysis Model
 The second model implemented, tested, and evaluated was a FHIR implementation derived from a Social Services Domain Analysis Logical Model. This model can be thought of as a “greenfield” model as it was not constrained the SDOH CC IG or the FHIR 4.0.1 Release.  
@@ -33,9 +38,3 @@ The following were considerations in the SS DAM.
 * Making personal relationships between individuals discoverable and executable is an important functional capability in Social Services Domains. Relationships include personal relationships - mother, children, guardian, ward, live together; relationships between an individual and an organization - religious/spiritual, employment, community organization; and between an individual and a legal authority - US citizen, Tribal Nation, prison.
 * Personal relationships are also important in understanding the availability of care resources that can be available to help an individual or a group in which that individual is a member. This support team expands beyond the care team to assist in addressing social needs and risks factors.
 * The resulting interventions determined by the Program System do not fit with the current SDOH CC IG guidance where the intervention is classified as a Procedure and the subsequent Financial Interaction Workflow (Add link). A procedure does not have 1) the temporal aspect of group membership associated. For example, the members of a group receiving a social service may change due to birth, death, an eligibility rule, and other factors. 2)  in the FHIR Financial Interaction Workflow, the method of payment and funding for a procedure is conceptually different from a social service intervention.
-
-### Group
-An organization is a group of individuals working together towards common goals and objectives. It can take various forms, such as a business, non-profit, government agency, or any structured entity where people collaborate to achieve specific purposes. Organizations typically have defined roles, responsibilities, and a hierarchical structure to facilitate coordination and efficiency in pursuing their missions or activities.
-
-### Legal jurisdiction
-Legal jurisdiction refers to the authority or power of a legal entity, such as a court or government, to make and enforce laws within a specific geographical area or over certain individuals or entities. It defines the scope of the legal system's control and influence. Jurisdiction can be based on factors such as territory, subject matter, or the individuals involved. Different levels of government, both within a country and internationally, may have distinct jurisdictions. Understanding jurisdiction is crucial in determining which laws apply to a particular situation and which legal authorities have the right to adjudicate or enforce those laws.

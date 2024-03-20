@@ -47,7 +47,7 @@ class Membership {
    effectiveTiming : Timing
    status : Code
    verification : Code
-   qualificatoin : Qualification
+   qualification : Qualification
    
 }
  

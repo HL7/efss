@@ -53,8 +53,6 @@ class Association {
    effectiveTiming : Timing
    status : Code
    verification : Code
-   qualificatoin : Qualification
-   
 }
 
 LifeSet "0..*" - "1..1" Organization

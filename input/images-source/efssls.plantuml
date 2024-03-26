@@ -9,14 +9,7 @@ header "EFSS Life Set"
 title Enhancing FHIR for Social Services
 
 class Individual {
-active: boolean
-identifier:Identifier
-name : HumanName
-address:Address
-birthdate : Date
-gender : Code
-martialStatus : Code
-communication : communication
+ 
 }
 
  
@@ -48,6 +41,7 @@ class Association {
    effectiveTiming : Timing
    status : Code
    verification : Code
+   qualification : Code
 }
 
 LifeSet "0..*" - "1..1" Organization

@@ -6,14 +6,7 @@ header "EFSS Screening Set"
 title Enhancing FHIR for Social Services
 
 class Individual {
-active: boolean
-identifier:Identifier
-name : HumanName
-address:Address
-birthdate : Date
-gender : Code
-martialStatus : Code
-communication : communication
+ 
 }
 
  
@@ -34,13 +27,11 @@ ScreeningSet "0..*" - "1..1" Individual
 (ScreeningSet, Individual) .. Membership
 
 class Membership {
-   type : Code
+   membership : Code
    effectiveTime : Date
-   effectiveTiming : Timing
    status : Code
-   verification : Code
-   qualification : Qualification
-   
+   role : Code
+   verification : Code   
 }
  
 

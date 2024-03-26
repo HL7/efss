@@ -85,8 +85,8 @@ parameters:
 pages:
   index.md:
     title: Enhancing FHIR for Social Services
-  background.md:
-    title: Background  
+  rationale.md:
+    title: Rationale  
   hudusecase.md:
     title: HUD Consumer Use Case 
   tanfusecase.md:
@@ -108,7 +108,7 @@ pages:
         
 menu:
   Home: index.html
-  Background: background.html
+  Rationale: background.html
   Use Cases:
     HUD Consumer Use Case: hudusecase.html 
     TANF Consumer Use Case: tanfusecase.html

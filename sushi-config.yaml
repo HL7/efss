@@ -86,37 +86,41 @@ pages:
   index.md:
     title: Enhancing FHIR for Social Services
   background.md:
-    title: Background
-  usecases.md:
-    title: Use Cases    
-  implementer.md:
-    title: Model Descriptions
-  design.md:
-    title: Models Evaluated
-  fhir_reconciliation.md:
-    title: FHIR Reconciliation
-  hud_terms.md:
-    title: HUD Terms and Eligibility
-  tribal_tanf_terms.md:
-    title: Tribal TANF Terms and Eligibility
-  artifact_tbd.md:
-    title: Artifact Name TBD
+    title: Background  
+  hudusecase.md:
+    title: HUD Consumer Use Case 
+  tanfusecase.md:
+    title: TANF Consumer Use Case
+  hudprogramusecase.md:
+    title: HUD Program Use Case
+  tanfprogramusecase.md:
+    title: TANF Program Use Case
   glossary.md:
     title: Glossary
+  approach.md:
+    title: Approach
+  logical.md:
+    title: Logical Model
+  domain.md:
+    title: Domain Model
+  fhir.md:
+    title: FHIR Model
         
 menu:
   Home: index.html
   Background: background.html
-  Use Cases: usecases.html 
-  Models Evaluated: design.html
-  Model Descriptions: implementer.html  
-  FHIR Realization: fhir_reconciliation.html
+  Use Cases:
+    HUD Consumer Use Case: hudusecase.html 
+    TANF Consumer Use Case: tanfusecase.html
+    HUD Program Use Case: hudprogramusecase.html 
+    TANF Program Use Case: tanfprogramusecase.html 
+  Models:   
+    Approach: approach.html
+    Logical Model: logical.html
+    Domain Model: domain.html
+    FHIR Model: fhir.html 
   Glossary: glossary.html
-  Artifacts: 
-    Summary: artifacts.html
-    HUD Terms and Eligibility: hud_terms.html
-    Tribal TANF Terms and Eligibility: tribal_tanf_terms.html
-    Artifact Name TBD: artifact_tbd.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

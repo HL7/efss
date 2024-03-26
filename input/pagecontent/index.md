@@ -1,3 +1,11 @@
+<div markdown="1" class="note-to-balloters">
+ 
+The authors are asking for feedback on the design approach for representing social service systems
+.... We welcome your feedback.
+</div>
+
+
+
 ### Introduction
 The Enhancing FHIR to Address Social Services and Social Determinants Project seeks to extend the use of FHIR to support Social Services more effectively and efficiently. The HL7 Gravity Accelerator Program has done significant work in the context of social domains. This guide leverages their work and is a Companion Guide to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide.
 This project's objective is to reduce some of the barriers faced to effectively and efficiently delivering FHIR-based systems that will incorporate social services and social determinants to improve outcomes.

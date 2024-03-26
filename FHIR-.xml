@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="" url="http://hl7.org/fhir/us/efss">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Person/Abby-McIntyre" key="Person-Abby-McIntyre" name="Abby-McIntyre"/>
+<artifact id="Person/Andy-Smith" key="Person-Andy-Smith" name="Andy-Smith"/>
+<artifact id="ValueSet/association-qualification-type-code-vs" key="ValueSet-association-qualification-type-code-vs" name="Association Qualification Type Code VS"/>
+<artifact id="Person/Ben-Jameson" key="Person-Ben-Jameson" name="Ben-Jameson"/>
+<artifact id="StructureDefinition/Association" key="StructureDefinition-Association" name="FHIR Analysis Model for EFSS : Association"/>
+<artifact id="StructureDefinition/Individual" key="StructureDefinition-Individual" name="FHIR Analysis Model for EFSS : Individual"/>
+<artifact id="StructureDefinition/LegalAuthority" key="StructureDefinition-LegalAuthority" name="FHIR Analysis Model for EFSS : LegalAuthority"/>
+<artifact id="StructureDefinition/LifeSet" key="StructureDefinition-LifeSet" name="FHIR Analysis Model for EFSS : Life Set"/>
+<artifact id="StructureDefinition/membership" key="StructureDefinition-membership" name="FHIR Analysis Model for EFSS : Membership"/>
+<artifact id="StructureDefinition/Qualification" key="StructureDefinition-Qualification" name="FHIR Analysis Model for EFSS : Qualification"/>
+<artifact id="StructureDefinition/ScreeningSet" key="StructureDefinition-ScreeningSet" name="FHIR Analysis Model for EFSS : Screening Set"/>
+<artifact id="StructureDefinition/IndividualRole" key="StructureDefinition-IndividualRole" name="FHIR Realization Model for EFSS : IndividualRole"/>
+<artifact id="StructureDefinition/FHIRLifeSet" key="StructureDefinition-FHIRLifeSet" name="FHIR Realization Model for EFSS : Life Set"/>
+<artifact id="StructureDefinition/FHIRScreeningSet" key="StructureDefinition-FHIRScreeningSet" name="FHIR Realization Model for EFSS : Screening Set"/>
+<artifact id="StructureDefinition/fhirassssociation" key="StructureDefinition-fhirassssociation" name="FHIRAssociation"/>
+<artifact id="StructureDefinition/FHIRIndividualReference" key="StructureDefinition-FHIRIndividualReference" name="FHIRIndividualReference"/>
+<artifact id="StructureDefinition/FHIRMembershipEffectivePeriod" key="StructureDefinition-FHIRMembershipEffectivePeriod" name="FHIRMembershipEffectivePeriod"/>
+<artifact id="StructureDefinition/FHIRMembershipRole" key="StructureDefinition-FHIRMembershipRole" name="FHIRMembershipRole"/>
+<artifact id="StructureDefinition/FHIRMembershipStatus" key="StructureDefinition-FHIRMembershipStatus" name="FHIRMembershipStatus"/>
+<artifact id="StructureDefinition/FHIRMembershipType" key="StructureDefinition-FHIRMembershipType" name="FHIRMembershipType"/>
+<artifact id="StructureDefinition/FHIRMembershipVerification" key="StructureDefinition-FHIRMembershipVerification" name="FHIRMembershipVerification"/>
+<artifact id="StructureDefinition/fhirqualification" key="StructureDefinition-fhirqualification" name="FHIRQualification"/>
+<artifact id="StructureDefinition/fhirqualificationvalue" key="StructureDefinition-fhirqualificationvalue" name="FHIRQualificationValue"/>
+<artifact id="StructureDefinition/fhirsubject" key="StructureDefinition-fhirsubject" name="FHIRSubject"/>
+<artifact id="Group/HUD1-LifeSet" key="Group-HUD1-LifeSet" name="HUD1-LifeSet"/>
+<artifact id="Group/HUD1-Screening-Set" key="Group-HUD1-Screening-Set" name="HUD1-Screening-Set"/>
+<artifact id="ServiceRequest/HUD1-ServiceRequest" key="ServiceRequest-HUD1-ServiceRequest" name="HUD1-ServiceRequest"/>
+<artifact id="ValueSet/life-set-association-vs" key="ValueSet-life-set-association-vs" name="Life Set Association VS"/>
+<artifact id="ValueSet/life-set-association-verification-role-vs" key="ValueSet-life-set-association-verification-role-vs" name="Life Set Association Verification Code VS"/>
+<artifact id="ValueSet/life-set-association-status-role-vs" key="ValueSet-life-set-association-status-role-vs" name="LifeSet Association Status Code VS"/>
+<artifact id="ValueSet/membership-type-role-vs" key="ValueSet-membership-type-role-vs" name="Membership Role Code VS"/>
+<artifact id="ValueSet/membership-status-role-vs" key="ValueSet-membership-status-role-vs" name="Membership Status Code VS"/>
+<artifact id="ValueSet/membership-type-code-vs" key="ValueSet-membership-type-code-vs" name="Membership Type Code VS"/>
+<artifact id="ValueSet/membership-verification-role-vs" key="ValueSet-membership-verification-role-vs" name="Membership Verification Code VS"/>
+<artifact id="Practitioner/Nancy-Smith" key="Practitioner-Nancy-Smith" name="Nancy-Smith"/>
+<artifact id="Practitioner/Robert-Aston" key="Practitioner-Robert-Aston" name="Robert-Aston"/>
+<artifact id="Person/Sarah-Kelly" key="Person-Sarah-Kelly" name="Sarah-Kelly"/>
+<artifact id="Person/Tim-Harper" key="Person-Tim-Harper" name="Tim-Harper"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="approach" name="Approach"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="domain" name="Domain Model"/>
+<page key="index" name="Enhancing FHIR for Social Services"/>
+<page key="fhir" name="FHIR Model"/>
+<page key="glossary" name="Glossary"/>
+<page key="hudusecase" name="HUD Consumer Use Case"/>
+<page key="hudprogramusecase" name="HUD Program Use Case"/>
+<page key="logical" name="Logical Model"/>
+<page key="tanfusecase" name="TANF Consumer Use Case"/>
+<page key="tanfprogramusecase" name="TANF Program Use Case"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

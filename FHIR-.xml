@@ -46,7 +46,6 @@
 <page key="many" name="(many)"/>
 <page key="approach" name="Approach"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="background" name="Background"/>
 <page key="domain" name="Domain Model"/>
 <page key="index" name="Enhancing FHIR for Social Services"/>
 <page key="fhir" name="FHIR Model"/>
@@ -54,6 +53,7 @@
 <page key="hudusecase" name="HUD Consumer Use Case"/>
 <page key="hudprogramusecase" name="HUD Program Use Case"/>
 <page key="logical" name="Logical Model"/>
+<page key="rationale" name="Rationale"/>
 <page key="tanfusecase" name="TANF Consumer Use Case"/>
 <page key="tanfprogramusecase" name="TANF Program Use Case"/>
 <page key="toc" name="Table of Contents"/>

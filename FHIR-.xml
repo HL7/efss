@@ -10,7 +10,7 @@
 <artifact id="Person/Ben-Jameson" key="Person-Ben-Jameson" name="Ben-Jameson"/>
 <artifact id="StructureDefinition/Association" key="StructureDefinition-Association" name="FHIR Analysis Model for EFSS : Association"/>
 <artifact id="StructureDefinition/Individual" key="StructureDefinition-Individual" name="FHIR Analysis Model for EFSS : Individual"/>
-<artifact id="StructureDefinition/LegalAuthority" key="StructureDefinition-LegalAuthority" name="FHIR Analysis Model for EFSS : LegalAuthority"/>
+<artifact id="StructureDefinition/LegalJurisdiction" key="StructureDefinition-LegalJurisdiction" name="FHIR Analysis Model for EFSS : LegalJurisdiction"/>
 <artifact id="StructureDefinition/LifeSet" key="StructureDefinition-LifeSet" name="FHIR Analysis Model for EFSS : Life Set"/>
 <artifact id="StructureDefinition/membership" key="StructureDefinition-membership" name="FHIR Analysis Model for EFSS : Membership"/>
 <artifact id="StructureDefinition/Qualification" key="StructureDefinition-Qualification" name="FHIR Analysis Model for EFSS : Qualification"/>

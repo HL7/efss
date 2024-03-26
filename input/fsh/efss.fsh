@@ -81,7 +81,7 @@ Title: "FHIR Analysis Model for EFSS : Association"
 Description: "Association"
 * ^baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * ^kind = #complex-type
-* association 1..1 SU Reference(Individual or Organization or LegalAuthority) "individual" "Individual"
+* association 1..1 SU Reference(Individual or Organization or LegalJurisdiction) "individual" "Individual"
 * type 1..1 SU CodeableConcept "Type of relationship, for instance biological daugher or co-habitant" "Relationship"
 * type from LifeSetAssociationVS (example)
 * effectiveTime 0..1 SU Period "When the association is/was active" "Effective Time"
@@ -151,11 +151,11 @@ Description: "Screening Set is a composition of individuals in need of service(s
 * status 1..1 SU code "status" "status"
 * membership 0..* Membership  "Membership" "Membership"
 
-Resource: LegalAuthority
-Id: LegalAuthority
+Resource: LegalJurisdiction
+Id: LegalJurisdiction
 Parent: DomainResource
-Title: "FHIR Analysis Model for EFSS : LegalAuthority"
-Description: "A legal authority refers to a source of law or a body that has the power to make and enforce laws within a particular jurisdiction."
+Title: "FHIR Analysis Model for EFSS : LegalJurisdiction"
+Description: "A legal jurisdiction refers to a source of law or a body that has the power to make and enforce laws within a particular jurisdiction."
 * ^baseDefinition = "http://hl7.org/fhir/StructureDefinition/DomainResource"
 * ^kind = #resource
 * identifier 0..* SU Identifier "identifier" "Identifier"
@@ -163,4 +163,4 @@ Description: "A legal authority refers to a source of law or a body that has the
 * name 0..* SU string "name" "name"
 * alias 0..* SU string "name" "name"
 * telecom 0..* SU ContactPoint "telecom" "Telecom"
-* partOf 0..* SU Reference(LegalAuthority) "legalAuthority" "LegalAuthority"
+* partOf 0..* SU Reference(LegalJurisdiction) "legalJurisdiction" "LegalJurisdiction"

@@ -43,7 +43,7 @@ Id: fhirassssociation
     verification 0..* and
     qualification 0..*
 * extension[association] ^short = "associtions"
-* extension[association].value[x] only Reference(Patient or IndividualRole or Organization or LegalAuthority)
+* extension[association].value[x] only Reference(Patient or IndividualRole or Organization or LegalJurisdiction)
 * extension[type].value[x] only CodeableConcept 
 * extension[type] ^short = "Type of relationship, for instance biological daugher or co-habitant"  
 * extension[effectiveTime].value[x]  only Period 

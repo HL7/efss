@@ -47,8 +47,8 @@ class Association {
 LifeSet "0..*" - "1..1" Organization
 (LifeSet, Organization) .. Association
  
-LifeSet "0..*" - "1..1" LegalAuthority
-(LifeSet, LegalAuthority) .. Association
+LifeSet "0..*" - "1..1" LegalJurisdiction
+(LifeSet, LegalJurisdiction) .. Association
  
 
 

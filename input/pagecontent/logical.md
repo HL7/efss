@@ -26,8 +26,8 @@ A life set is made up of a collection of associations to individuals, organizati
 An example of association of to an individual is co-habitation 
 #### Organization
 An example of association to an organization is membership in ???
-#### Legal Authority
-An example of association to a legal authority is a persons citizen ship status
+#### Legal Jurisdiction
+An example of association to a legal jurisdiction is a persons citizen ship status
 
 #### Association
 The association provides the means to describe a discreet association completely and unambiguously

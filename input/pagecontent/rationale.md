@@ -1,27 +1,36 @@
-### Providing Better Outcomes ###
-It is becoming increasingly evident that Social Determinants (SD) are key factors in determining the well-being of an individual. They can negatively impact clinical conditions when social needs are not met. 
+### HHS Data Vision
 
-Numerous studies have shown the impact of SD factors. For example, a National Academy of Medicine Report stated that “Medical care is estimated to account for only 10 to 20 percent of the modifiable contributors to healthy outcomes for a population. The other 80 to 90 percent are sometimes broadly called the ‘SDoH’”. 
+ Data is available, accessible, timely, equitable, meaningfully usable, and protected – and being actively used by HHS, our partners, and the public to realize HHS’ mission.
 
-Significant resources are expended by non-clinical organizations to deliver social and human services to address SD needs. The work of non-clinical organizations focuses on the person or individual, their social relationships, and providing social services to improve the well-being of the individual. The FHIR standard can be enhanced to represent social constructs such as groups and relationships between individuals, which is the primary focus of this informative Companion Guide.
+* Cultivate Data Talent
+* **Foster Data Sharing**
+* Integrate Administrative Data into Program Operations
+* **Enable Whole-Person Care Delivery by Connecting Human Services Data**
+* Responsibly Leverage Artificial Intelligence﻿
 
-FHIR has proven its ability to deliver clinical applications using a patient-centric perspective. The US Department for the Administration for Children and Families (ACF), Gravity Pilot Projects, and other initiatives have been developing FHIR based systems that include the capability to coordinate and manage care that also includes addressing social conditions and social service interventions. 
+ [HHS Data Vision](https://cdo.hhs.gov/s/hhs-data-strategy "HHS Data Vision")
 
-Whole Person Care provides a view of an individual’s clinical, behavioral, and social needs and their support network. It is becoming increasingly accepted that these needs must be addressed together to promote well-being and healthy outcomes. Enhancing the FHIR Platform to address social services enables FHIR to incorporate the specific requirements of social services and Whole Person Care into the standard.
+### Enhancing FHIR 
 
-ACF and other federal, state, and local agencies and jurisdictions are using FHIR-based systems to assist in delivering better outcomes for their populations by addressing Social Determinant (SD) factors with appropriate and qualified human and social services. These organizations have found that FHIR needs to be improved to provide complete solutions when working with individuals who need social services and with organizations that provide those social services that can improve health outcomes but are not atypical healthcare systems.
+#### Opportunity
 
-Whole Person Care is increasingly recognized as an approach for delivering better outcomes and cost-efficient solutions. The US Federal organizations such as the CDC and Health and Human Services have both strategy statements and initiatives supporting Whole Person Care. Within HHS, agencies such as CMS, SAMSHA, ACF, and the ONC all have initiatives. States such as California and Arizona have made this a strategic initiative, with California perhaps being the leader. Whole Person Care solutions from a variety of vendors are being offered including those previously focused on clinical, those primarily focused on social services, those creating new Whole Person Care coordination and case management solutions.
+Human services lags health care in the availability, interoperability, and electronic exchange of data, particularly at the point of care. **There is a need for more comprehensive data standards**; freely available, standard taxonomies for human services provider information; better tools to manage consent, map household relationships, and perform matching and linkage; expanded provider onboarding; and aligned incentives and requirements to stimulate data flows. Interoperability improvements would significantly enhance case management, coordinated care and service delivery, closed loop screening and referral with “warm handoffs” between providers, expedited enrollment into benefits and service programs, and enable more efficient and equitable program design and delivery. Collectively, these advances would improve participants’ experience and access to services. The 2009 HITECH Act and CMS’s Meaningful Use program invested tens of billions of dollars in interoperable health data exchange; in the absence of commensurate investment in human services data exchange, progress can nonetheless be made. In light of the extensive health and public health common data standards development in recent decades and the need for cross-sector data sharing to deliver integrated services, human services data must become interoperable with health data, building from common data standards such as the U.S. Core Data for Interoperability (USCDI).
 
-FHIR, as a platform for developing and delivering interoperability solutions for Whole Person Care and HL7, as a community focused on bringing participants together to deliver better outcomes, are best positioned to be the leaders in this capability. 
 
-This Companion Guide attempts to leverage the previous work within the HL7 community, especially the work of the Gravity Project. This version of the Companion Guide is informative, intended to be an initial step to providing enhancements to FHIR to enable the goal of a FHIR System providing Whole Person Care. The FHIR Realization Model is the initial step to augment and balance the need for separating the three domains required in Whole Person Care while leveraging the SDOH Clinical Care IG and being backward compatible with FHIR. 
+#### Aspiration
 
-Actions have been taken recently to deliver on the promise of providing Whole Person Care Views to deliver improved outcomes, both within and outside of the HL7 Community. The Companion Guide attempts to leverage the previous work within the HL7 community, especially the work of the Gravity Project. 
+Real-time, relevant data and data-driven insights are available to human services practitioners, health care providers, facilities/programs, and state, Tribal, local, and territorial governments to establish a whole-person and whole-family view of wellness and needs; seamlessly connect people with needed support services; proactively predict future needs and better address them at an individual and system level; effectively manage programs and facilities; evaluate the effectiveness and value of service provision at a local and macro level; and more equitably and efficiently plan and allocate resources.
 
-Separating concerns, as a general principle, makes software more modular. As a result it becomes more manageable, maintainable, and understandable by reducing complexity. The alternative is overloading the meaning and use of concepts.  The approach of overloading can simplify interfaces used by developers and the reuse of code. However, it does lead to ambiguity of concepts and code complexity. 
 
-As the Whole Person Care View is an aggregated view across these different domains, developing such solutions introduces its own complexity. The goal is the FHIR Realization Model enabling the HL7 community to take a leadership position in understanding that social services are different and need for it to be a first-class citizen in systems. It is critical to deliver efficient and cost effective social services to produce healthy outcomes for individuals, families, households, tribes, and larger populations while continuing to build FHIR systems that understand the causal relationships between domains.
+#### Develop data standards
 
-Although beyond the scope of this informative guide, there have been patterns implemented by existing FHIR systems that can guide an infrastructure for delivering the aggregated Whole Person Care View.  An example is distributed environments where multiple patient records exist for the same individual then are consolidated to provide an aggregated, logical view of the patient across all these systems. Examples of these solutions requiring such capabilities are HIEs, QHINs, CIEs, CCHs, and complex hospital systems with localized systems. 
 
+Ensure full human services representation in HHS and external standards-development bodies. **Identify and prioritize gaps in standards**, use cases, infrastructure (i.e., cloud systems, retention), and policy/governance (i.e., consent management, household relationship mapping) based on HHS, ecosystem, and end-user priorities.
+
+Partner with standards setting organizations to strategically develop human services standards, use cases, and tools that address the most critical gaps, **including creating USCDI+ data set standards to support human services programs**.
+
+Coordinate with federal partners to ensure human services standards and taxonomies are open and accessible to implementers.
+
+
+### FHIR and Social Services
+As part of our initial investigations, we identified several gaps and difficulties implementers and users were encountering applying FHIR Standards in Social Service environments.  Within this guide - we have highlighted gaps and proposed approaches to resolving these gaps.

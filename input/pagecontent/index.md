@@ -1,6 +1,8 @@
 <div markdown="1" class="note-to-balloters">
- 
-The authors are asking for feedback on the design approach for representing social service systems
+The authors are asking for feedback on the design approach for representing social service systems as such this ballot contains is anticipated to be reviewed by both Subject Matter Experts in the Social Services domain, FHIR architects and implementors, and those of produce Whole Person Care solutions. Many terms used in these different domains may not be familiar to the readers. For this reason, a glossary of terms is provided and it is recommended that all readers familiarize themselves with the terms before reading the document. Finally, the table below gives guidance to what content is directed to Subject Matter Experts and what content is directed to the more technical community.
+
+This IG contains material that may be new to the HL7 Community. Additionally, some sections are more applicable to participants in social services, while others provide detailed technical information targeted at implementors. The table below provides a listing of the key sections of the IG with recommendations to the order that they should be read.
+
 .... We welcome your feedback.
 </div>
 

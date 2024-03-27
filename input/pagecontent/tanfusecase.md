@@ -1,4 +1,3 @@
-Two Use Cases are provided that have been used to determine what functionality the FHIR System needs to support to address Social Services. The Whole Person Care View scope of these Use Cases has been simplified to only factors specific to Social Services and do not include other clinical or behavioral considerations.
 
 ### Financial Assistance (Tribal TANF)
 Lila, a single mother of two children, Nayeli (aged 14) and Takoda (aged 10), lives on the Pine Ridge Reservation in South Dakota. Lila recently lost her job at a local arts and crafts store, which had to close due to economic difficulties. The loss of her job has strained their financial situation, and Lila struggles to meet the family's basic needs.

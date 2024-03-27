@@ -1,20 +1,21 @@
-### HHS Data Vision
+### HHS Data Strategy
 
- Data is available, accessible, timely, equitable, meaningfully usable, and protected – and being actively used by HHS, our partners, and the public to realize HHS’ mission.
+From the HHS Data Strategy document, "Data is available, accessible, timely, equitable, meaningfully usable, and protected – and being actively used by HHS, our partners, and the public to realize HHS’ mission."
 
 * Cultivate Data Talent
 * **Foster Data Sharing**
 * Integrate Administrative Data into Program Operations
 * **Enable Whole-Person Care Delivery by Connecting Human Services Data**
-* Responsibly Leverage Artificial Intelligence﻿
+* **Responsibly Leverage Artificial Intelligence﻿**
 
  [HHS Data Vision](https://cdo.hhs.gov/s/hhs-data-strategy "HHS Data Vision")
 
 ### Enhancing FHIR 
 
 #### Opportunity
+Also from the HHS Data Strategy document:  
 
-Human services lags health care in the availability, interoperability, and electronic exchange of data, particularly at the point of care. **There is a need for more comprehensive data standards**; freely available, standard taxonomies for human services provider information; better tools to manage consent, map household relationships, and perform matching and linkage; expanded provider onboarding; and aligned incentives and requirements to stimulate data flows. Interoperability improvements would significantly enhance case management, coordinated care and service delivery, closed loop screening and referral with “warm handoffs” between providers, expedited enrollment into benefits and service programs, and enable more efficient and equitable program design and delivery. Collectively, these advances would improve participants’ experience and access to services. The 2009 HITECH Act and CMS’s Meaningful Use program invested tens of billions of dollars in interoperable health data exchange; in the absence of commensurate investment in human services data exchange, progress can nonetheless be made. In light of the extensive health and public health common data standards development in recent decades and the need for cross-sector data sharing to deliver integrated services, human services data must become interoperable with health data, building from common data standards such as the U.S. Core Data for Interoperability (USCDI).
+"Human services lags health care in the availability, interoperability, and electronic exchange of data, particularly at the point of care. **There is a need for more comprehensive data standards**; freely available, standard taxonomies for human services provider information; better tools to manage consent, map household relationships, and perform matching and linkage; expanded provider onboarding; and aligned incentives and requirements to stimulate data flows. Interoperability improvements would significantly enhance case management, coordinated care and service delivery, closed loop screening and referral with “warm handoffs” between providers, expedited enrollment into benefits and service programs, and enable more efficient and equitable program design and delivery. Collectively, these advances would improve participants’ experience and access to services. The 2009 HITECH Act and CMS’s Meaningful Use program invested tens of billions of dollars in interoperable health data exchange; in the absence of commensurate investment in human services data exchange, progress can nonetheless be made. In light of the extensive health and public health common data standards development in recent decades and the need for cross-sector data sharing to deliver integrated services, human services data must become interoperable with health data, building from common data standards such as the U.S. Core Data for Interoperability (USCDI)."
 
 
 #### Aspiration

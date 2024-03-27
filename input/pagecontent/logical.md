@@ -1,7 +1,6 @@
-### Logical Model for Social Services (EFSS)
+### Social Service Domain Model
 
-The logical model based on the use cases and discussion revealed two sets of associations and relationships.
-Life Set which is the set of associations describing a persons social environment at a particular time and Screening Set which is a collection of individuals who are in need of some type of service (health or social services)
+This is a logical model based on the use cases and discussion revealed two sets of associations and relationships. Life Set which is the set of associations describing a persons social environment at a particular time and Screening Set which is a collection of individuals who are in need of some type of service (health or social services)
 
 Describing associations and relationships have numerous sub components need to be complete.  Seemingly simple associations can become convoluted quickly leading to incomplete information exchanges.  The approach taken here was to be semantically clear on associations, simplifying structure and limiting overloading concepts.
 
@@ -17,7 +16,7 @@ The same conclusion was made on creating a set of individuals in need of service
 
 <figure>
 {%include efssls.svg%}
-<figcaption><b>Figure 1: Logical Model for Enhancing FHIR for Life Set</b></figcaption>
+<figcaption><b>Figure 1: Social Service Domain Model for Life Set</b></figcaption>
 </figure>
 <br clear="all" />
 
@@ -56,7 +55,7 @@ Qualification provides a means to annotate the association with meaningful infor
 #### Screening Set
 <figure>
 {%include efssss.svg%}
-<figcaption><b>Figure 1: Logical Model for Enhancing FHIR for Screening Set</b></figcaption>
+<figcaption><b>Figure 1: Social Service Domain Model for Screening Set</b></figcaption>
 </figure>
 <br clear="all" />
 

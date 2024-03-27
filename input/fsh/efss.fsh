@@ -4,45 +4,51 @@ Alias:   MaritalOrSpousalStatus = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.
 Alias:   PersonalAndLegalRelationshipRoleType = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1
 Alias:   VeteranStatusGoals = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.214
 Alias:   Problem = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.3221.7.4
-
+Alias:   EFSS = http://hl7.org/fhir/StructureDefinition/structuredefinition-efss
 
 
 ValueSet: LifeSetAssociationVS
 Id: life-set-association-vs
 Title: "Life Set Association VS"
+* ^experimental = true
 * include codes from valueset FamilyMemberValue and MaritalOrSpousalStatus and PersonalAndLegalRelationshipRoleType
 
 ValueSet: LifeSetAssociationVerificationCodeVS
 Id: life-set-association-verification-role-vs
 Title: "Life Set Association Verification Code VS"
-          
+* ^experimental = true        
+
 ValueSet: LifeSetAssociationStatusCodeVS
 Id: life-set-association-status-role-vs
 Title: "LifeSet Association Status Code VS"
+* ^experimental = true
 
 ValueSet: MembershipTypeCodeVS
 Id: membership-type-code-vs
 Title: "Membership Type Code VS"
+* ^experimental = true 
 
 
 ValueSet: MembershipRoleCodeVS
 Id: membership-type-role-vs
 Title: "Membership Role Code VS"
+* ^experimental = true
 * include codes from valueset PersonalAndLegalRelationshipRoleType
 
 ValueSet: MembershipVerificationCodeVS
 Id: membership-verification-role-vs
 Title: "Membership Verification Code VS"
+* ^experimental = true
 
 ValueSet: MembershipStatusCodeVS
 Id: membership-status-role-vs
 Title: "Membership Status Code VS"
-
+* ^experimental = true
 
 ValueSet: AssociationQualificationTypeCodeVS
 Id: association-qualification-type-code-vs
 Title: "Association Qualification Type Code VS"
-
+* ^experimental = true
 
 Logical: FAMIndividual
 Id: EFSS-FAM-Individual
@@ -65,29 +71,29 @@ Characteristics: #can-be-target
 * healthStatus  from Problem  
 
 
-Logical: FAMQualification
-Id: EFSS-FAM-Qualification
-Title: "Qualification"
-Description: "Qualification"
-* type 1..1 SU CodeableConcept "Type of qualification"
-* type from AssociationQualificationTypeCodeVS (example)
-* value 1..1 SU Quantity "Verification status of association" "Verification"
+// Logical: FAMQualification
+// Id: EFSS-FAM-Qualification
+// Title: "Qualification"
+// Description: "Qualification"
+// * type 1..1 SU CodeableConcept "Type of qualification"
+// * type from AssociationQualificationTypeCodeVS (example)
+// * value 1..1 SU Quantity "Verification status of association" "Verification"
 
 
-Logical: FAMAssociation
-Id: EFSS-FAM-Association
-Title: "Association"
-Description: "Association"
-* association 1..1 SU Reference(FAMIndividual or Organization or FAMLegalJurisdiction) "individual" "Individual"
-* type 1..1 SU CodeableConcept "Type of relationship, for instance biological daugher or co-habitant" "Relationship"
-* type from LifeSetAssociationVS (example)
-* effectiveTime 0..1 SU Period "When the association is/was active" "Effective Time"
-* effectiveTiming 0..1 SU Timing "When the association is in effect during the effect time; For instance co-habition 6 weeks out of the year due to divorece settlement" "Effective Time"
-* status 0..* SU CodeableConcept "status" "Status"
-* type from LifeSetAssociationStatusCodeVS (example)
-* verification 0..* SU CodeableConcept "Verification status of association" "Verification"
-* type from LifeSetAssociationVerificationCodeVS (example)
-* qualification 0..* CodeableConcept "Qualification" "Qualification"
+// Logical: FAMAssociation
+// Id: EFSS-FAM-Association
+// Title: "Association"
+// Description: "Association"
+// * association 1..1 SU Reference(FAMIndividual or Organization or FAMLegalJurisdiction) "individual" "Individual"
+// * type 1..1 SU CodeableConcept "Type of relationship, for instance biological daugher or co-habitant" "Relationship"
+// * type from LifeSetAssociationVS (example)
+// * effectiveTime 0..1 SU Period "When the association is/was active" "Effective Time"
+// * effectiveTiming 0..1 SU Timing "When the association is in effect during the effect time; For instance co-habition 6 weeks out of the year due to divorece settlement" "Effective Time"
+// * status 0..* SU CodeableConcept "status" "Status"
+// * type from LifeSetAssociationStatusCodeVS (example)
+// * verification 0..* SU CodeableConcept "Verification status of association" "Verification"
+// * type from LifeSetAssociationVerificationCodeVS (example)
+// * qualification 0..* CodeableConcept "Qualification" "Qualification"
 
 Logical: FAMLifeSet
 Id: EFSS-FAM-Life-Set
@@ -95,7 +101,19 @@ Title: "Life Set"
 Description: "Life Set is an amalgamation of the persons/groups who constitute the interactions and relationships from the perspectice of an individual.  The associations from the individual to the person/group are explicit in nature as to avoid confusion and structured to properly elaborate all aspects of the particular association"
 * subject 1..1 SU FAMIndividual "Individual whose associations these are" "Individual"
 * identifier 0..* SU Identifier "identifier" "Identifier"
-* association 0..* SU FAMAssociation  "Association" "Association"
+* association 0..* SU BackboneElement  "Association" "Association"
+* association.entity 1..1 SU Reference(FAMIndividual or Organization or FAMLegalJurisdiction) "individual" "Individual"
+* association.type 1..1 SU CodeableConcept "Type of relationship, for instance biological daugher or co-habitant" "Relationship"
+* association.type from LifeSetAssociationVS (example)
+* association.effectiveTime 0..1 SU Period "When the association is/was active" "Effective Time"
+* association.effectiveTiming 0..1 SU Timing "When the association is in effect during the effect time; For instance co-habition 6 weeks out of the year due to divorece settlement" "Effective Time"
+* association.status 0..* SU CodeableConcept "status" "Status"
+* association.status from LifeSetAssociationStatusCodeVS (example)
+* association.verification 0..* SU CodeableConcept "Verification status of association" "Verification"
+* association.verification from LifeSetAssociationVerificationCodeVS (example)
+* association.qualification 0..* BackboneElement "Qualification" "Qualification"
+* association.qualification.code 1..1 SU CodeableConcept "Qualification" "Qualification"
+* association.qualification.value 1..1 SU  Quantity "Qualification" "Qualification"
 
 
 
@@ -107,25 +125,36 @@ Description: "Screening Set is a composition of individuals in need of service(s
 * serviceCategory 0..* SU CodeableConcept "general classificaiton of the services" "serviceCategory"
 * service 0..* SU CodeableConcept "one or more specific services needed" "serviceProgramb"
 * status 1..1 SU code "status" "status"
-* membership 0..* FAMMembership  "Membership" "Membership"
+* membership 0..* BackboneElement  "Membership" "Membership"
+* membership.individual 1..1 SU Reference(FAMIndividual) "Individual who requires service(s)" "Individual"
+* membership.type 0..1 SU CodeableConcept "Type of membership, HUD household for instance" "Membership"
+* membership.type from MembershipTypeCodeVS (example)
+* membership.effectiveTime 1..1 SU Period "When the membership was active" "Effective Time"
+* membership.status 0..* SU CodeableConcept "status" "Status"
+* membership.status from MembershipStatusCodeVS (example)
+* membership.role 0..* SU CodeableConcept "Possible role person is as part as it pertains to the type of membershihp, Head of Household for HUD Household" "Status"
+* membership.role from MembershipRoleCodeVS (example)
+* membership.verification 0..* SU CodeableConcept "Verification status of the membership/eligbility of this individual in set" "Verification"
+* membership.verification from MembershipVerificationCodeVS (example)
 
 
 
 
-Logical: FAMMembership
-Id: EFSS-FAM-Membership
-Title: "Membership"
-Description: "Membership"
-* individual 1..1 SU Reference(FAMIndividual) "Individual who requires service(s)" "Individual"
-* membership 0..1 SU CodeableConcept "Type of membership, HUD household for instance" "Membership"
-* membership from MembershipTypeCodeVS (example)
-* effectiveTime 1..1 SU Period "When the membership was active" "Effective Time"
-* status 0..* SU CodeableConcept "status" "Status"
-* status from MembershipStatusCodeVS (example)
-* role 0..* SU CodeableConcept "Possible role person is as part as it pertains to the type of membershihp, Head of Household for HUD Household" "Status"
-* role from MembershipRoleCodeVS (example)
-* verification 0..* SU CodeableConcept "Verification status of the membership/eligbility of this individual in set" "Verification"
-* verification from MembershipVerificationCodeVS (example)
+
+// Logical: FAMMembership
+// Id: EFSS-FAM-Membership
+// Title: "Membership"
+// Description: "Membership"
+// * individual 1..1 SU Reference(FAMIndividual) "Individual who requires service(s)" "Individual"
+// * membership 0..1 SU CodeableConcept "Type of membership, HUD household for instance" "Membership"
+// * membership from MembershipTypeCodeVS (example)
+// * effectiveTime 1..1 SU Period "When the membership was active" "Effective Time"
+// * status 0..* SU CodeableConcept "status" "Status"
+// * status from MembershipStatusCodeVS (example)
+// * role 0..* SU CodeableConcept "Possible role person is as part as it pertains to the type of membershihp, Head of Household for HUD Household" "Status"
+// * role from MembershipRoleCodeVS (example)
+// * verification 0..* SU CodeableConcept "Verification status of the membership/eligbility of this individual in set" "Verification"
+// * verification from MembershipVerificationCodeVS (example)
 
 Logical: FAMLegalJurisdiction
 Id: EFSS-FAM-Legal-Jurisdiction

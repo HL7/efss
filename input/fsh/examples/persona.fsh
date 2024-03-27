@@ -7,7 +7,7 @@ Usage: #example
 * birthDate = "2012"
 
 Instance: Abby-McIntyre-IndividualRole
-InstanceOf: IndividualRole
+InstanceOf: EFSSIndividualRole
 Usage: #example
 * individual = Reference(Abby-McIntyre)
 

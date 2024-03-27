@@ -10,8 +10,7 @@ This model is a representation of the of the core requirements for enhancing FHI
 
 ### FHIR Analysis Model Resources
 * [LifeSet]
+
 * [ScreeningSet]
-* [Association]
-* [membership]
 
 {% include markdown-link-references.md %}

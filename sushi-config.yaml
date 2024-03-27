@@ -116,9 +116,9 @@ menu:
     TANF Program Use Case: tanfprogramusecase.html 
   Models:   
     Approach: approach.html
-    Logical Model: logical.html
-    Domain Model: domain.html
-    FHIR Model: fhir.html 
+    Social Services Domain Model: logical.html
+    FHIR Analysis Model: domain.html
+    FHIR Realization Model: fhir.html 
   Glossary: glossary.html
   Artifacts: artifacts.html
 

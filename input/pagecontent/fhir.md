@@ -1,6 +1,5 @@
-### FHIR Model
-The FHIR Model is an extensive representation of the health domain but as documented there are some gaps within the model when applying 
-the approach to social services.  In the spirit of enhancement and with much discussion,  we have identified several opportunities for new resources and profiles that  we believe will be beneficial to the overall use of FHIR in a social services environment.
+### FHIR Realization Model
+This model is an extensive representation of the health domain but as documented, there are some gaps within the model when applying the approach to social services.  In the spirit of enhancement and with much discussion,  we have identified several opportunities for new resources and profiles that  we believe will be beneficial to the overall use of FHIR in a social services environment.
 
 We realize there is lots of discussions and options especially around the concept of individual representation within FHIR and look forward to a discussion, proposals and alternatives to support individuals effectively in FHIR as required for social services
 ### New Resources

@@ -100,11 +100,11 @@ pages:
   approach.md:
     title: Approach
   logical.md:
-    title: Logical Model
+    title: Social Services Domain Model
   domain.md:
-    title: Domain Model
+    title:  FHIR Analysis Model
   fhir.md:
-    title: FHIR Model
+    title: FHIR Realization Model
         
 menu:
   Home: index.html

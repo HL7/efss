@@ -6,21 +6,14 @@
 </style>
 
 <!-- mCODE Profiles -->
-[LifeSet]: StructureDefinition-LifeSet.html
+[LifeSet]: StructureDefinition-EFSS-FAM-Life-Set.html
 
-[ScreeningSet]:StructureDefinition-ScreeningSet.html
+[ScreeningSet]:StructureDefinition-EFSS-FAM-Screening-Set.html
 
-[Association]:StructureDefinition-Association.html
+[Association]:StructureDefinition-EFSS-FAM-Association.html
 
-[membership]:StructureDefinition-membership.html
-
-[Individual]:StructureDefinition-Individual.html
+[Membership]:StructureDefinition-EFSS-FAM-Membership.html
 
 
-[IndividualRole]:StructureDefinition-IndividualRole.html
 
-[FHIRLifeSet]:StructureDefinition-FHIRLifeSet.html
 
-[FHIRScreeningSet]:StructureDefinition-FHIRScreeningSet.html
-
-[LegalJurisdiction]:StructureDefinition-LegalJurisdiction.html

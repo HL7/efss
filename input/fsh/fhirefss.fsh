@@ -4,7 +4,7 @@ Alias: MEMBERSHIP = http://hl7.org/fhir/ValueSet/group-membership-basis
 
 
 Resource: EFSSIndividualRole
-Id: EFSS-IndividualRole
+Id: Efssindividualrole
 Parent: DomainResource
 Title: "IndividualRole"
 Description: "IndividualRole."
@@ -14,7 +14,7 @@ Description: "IndividualRole."
 
  
 Resource: EFSSLifeSet
-Id: EFSS-Life-Set
+Id: Efsslifeset
 Parent: DomainResource
 Title: "Life Set"
 Description: "Life Set is an amalgamation of the persons/groups who constitute the interactions and relationships from the perspectice of an individual.  The associations from the individual to the person/group are explicit in nature as to avoid confusion and structured to properly elaborate all aspects of the particular association"
@@ -37,54 +37,10 @@ Description: "Life Set is an amalgamation of the persons/groups who constitute t
 * association.qualification.value 1..1 SU  Quantity "Qualification" "Qualification"
 
 
-// 	Quantity	 
-// .... valueCodeableConcept			CodeableConcept	
-// .... valueString			string	
-
-// .... valueBoolean			boolean	
-// .... valueInteger			integer	
-// .... valueRange			Range	
-// .... valueRatio			Ratio	
-// .... valueSampledData			SampledData	
-// .... valueTime			time	
-// .... valueDateTime			dateTime	
-// .... valuePeriod			Period	
-// .... valueAttachment			Attachment
-
-// * association 0..* SU BackboneElement  "Association" "Association"
-// * serviceAnimal 0..* BackboneElement "Service animals" "Animals trained to assist the person by performing certain tasks."
-// * serviceAnimal.name 0..1 string "Name of service animal" "The name by which the service animal responds."
-// * serviceAnimal.breed 1..* CodeableConcept "Breed of service animal" "The dominant breed or breeds of the service animal."
-// * serviceAnimal.startDate 0..1 date "Date the service animal began work" "The date on which the service animal began working for the person."
-
-
-// Resource: EFSSAssociation
-// Id: EFSS-Association
-// Parent: DomainResource
-// Title: "Association"
-// Description: "Association"
-// * ^baseDefinition = "http://hl7.org/fhir/StructureDefinition/DomainResource"
-// * ^kind = #resource
-// * association 1..1 SU Reference(EFSSIndividualRole or Organization or LegalJurisdiction) "individual" "Individual"
-// * type 1..1 SU CodeableConcept "Type of relationship, for instance biological daugher or co-habitant" "Relationship"
-// * type from LifeSetAssociationVS (example)
-// * effectiveTime 0..1 SU Period "When the association is/was active" "Effective Time"
-// * effectiveTiming 0..1 SU Timing "When the association is in effect during the effect time; For instance co-habition 6 weeks out of the year due to divorece settlement" "Effective Time"
-// * status 0..* SU CodeableConcept "status" "Status"
-// * type from LifeSetAssociationStatusCodeVS (example)
-// * verification 0..* SU CodeableConcept "Verification status of association" "Verification"
-// * type from LifeSetAssociationVerificationCodeVS (example)
-// * qualification 0..* CodeableConcept "Qualification" "Qualification"
-
-
-// Extension: EFSSSubject
-// Description: "FHIRsubject"
-// Id: EFSS-Subject
-// * value[x] only Reference(EFSSIndividualRole or Patient)
-
 Extension: EFSSQualificationValue
 Description: "FHIRQualificationValue"
-Id: EFSS-Qualificationvalue
+Id: Efssqualificationvalue
+* ^url = "http://hl7.org/fhir/ig/efss/StructureDefinition/Efssqualificationvalue"
 * value[x] 1..1
 
 // Profile: EFSSQualification
@@ -96,35 +52,40 @@ Id: EFSS-Qualificationvalue
 //     EFSSQualificationValue named value 1..1 MS
  
 Extension: EFSSIndividualReference
-Id: EFSS-IndividualReference
+Id: Efssindividualreference
 Description: "FHIR Individual Reference"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRIndividualReference"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssindividualreference"
 * value[x] only  Reference(EFSSIndividualRole or Patient) 
 
 Extension: EFSSMembershipType
+Id: Efssmembershiptype
 Description: "Type of membership, HUD household for instance"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRMembershipType"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssmembershiptype"
 * value[x]  only CodeableConcept 
 
 
 Extension: EFSSMembershipStatus
+Id: Efssmembershipstatus
 Description: "Status of membershipe"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRMembershipStatus"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssmembershipstatus"
 * value[x]  only CodeableConcept 
 
 Extension: EFSSMembershipRole
+Id: Efssmembershiprole
 Description: "Membership role such as head of household"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRMembershipRole"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssmembershiprole"
 * value[x]  only CodeableConcept 
 
 Extension: EFSSMembershipVerification
+Id: Efssmembershipverification
 Description: "FHIR Membership Verification"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRMembershipVerification"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssmembershipverification"
 * value[x]  only CodeableConcept 
 
 Extension: EFSSMembershipEffectivePeriod
+Id: Efssmembershipeffectiveperiod
 Description: "FHIR Membership Effective Period"
-* ^url = "http://hl7.us/fhir/ig/efss/StructureDefinition/FHIRMembershipEffectivePeriod"
+* ^url = "http://hl7.org/fhir/us/efss/StructureDefinition/Efssmembershipeffectiveperiod"
 * value[x]  only Period 
 
 
@@ -145,7 +106,7 @@ Description: "Screening Set is a composition of individuals in need of service(s
 
 
 Resource: LegalJurisdiction
-Id: EFSS-LegalJurisdiction
+Id: LegalJurisdiction
 Parent: DomainResource
 Title: "LegalJurisdiction"
 Description: "A legal jurisdiction refers to a source of law or a body that has the power to make and enforce laws within a particular jurisdiction."

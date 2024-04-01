@@ -6,9 +6,9 @@
 </style>
 
 <!-- mCODE Profiles -->
-[LifeSet]: StructureDefinition-EFSS-FAM-Life-Set.html
+[LifeSet]: StructureDefinition-Sdohlifeset.html
 
-[ScreeningSet]:StructureDefinition-EFSS-FAM-Screening-Set.html
+[ScreeningSet]:StructureDefinition-Sdohscreeningset.html
 
 
 

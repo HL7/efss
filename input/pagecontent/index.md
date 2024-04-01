@@ -37,7 +37,7 @@ Artifacts – Downloads |Examples of persona data for Use cases for FHIR Realiza
 ### Companion Guide Scope
 The diagram below presents the Gravity Conceptual Model. It illustrates the scope of the Companion Guide and how it augments the most recent Gravity Conceptual Model in the SDOH Clinical Care Implementation Guide. To separate the concerns, the  Program System, on the left of the diagram, is responsible for enrollment in the social service(s).  This assumes that the Program System may or may not be a FHIR-based system. To support this position, over $400 billion of Social Services were delivered by just 3 separate Federal U. S. agencies in 2022 using non-FHIR Systems addressing housing insecurity, food insecurity, and temporary financial security.
 
-![Scope](CompanionGuideScope.png)
+![Scope](workflow_integration.png)
 
 The system depicted on the right is a FHIR System that provides Whole Person Care. It represents the SDOH Clinical Care Implementation Guide.
 

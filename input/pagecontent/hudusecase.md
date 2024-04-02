@@ -3,7 +3,17 @@ Two Use Cases are provided that have been used to determine what functionality t
 The following is a generic sequencing diagram that is applicable across the use cases described below.
 
 ### Use Case Sequence 
+The sequence diagram assumes:
+* Step 6 of the SDOH workflow guide is completed. **(add link)**
+* Data from SDOHCC ServiceRequest is used. 
+* LifeSet is also used to create ScreeningSet.
+* Consideration was given to the SDOHCC Group Profile but cannot be justified because:
+   * Entities for people must refer to a Patient or Practitioner Resource. 
+   * The SDOH Clinical Care IG states, "Profile for identifying groups of patients who have a Social Determinants of Health (SDOH) condition and are members of a specific payer organization." However, belonging to a payer organization is not a requirement for Social Services. Doing so would require recording false information.
+
 {%include housinginsecuritysequence.svg%}
+
+The result is the ProgramSystem sending data to the FHIR System to update the appropriate resources and profile.
 
 ### Data Elements Needed For Exchanges
 In the scope, a key task is to send information from the FHIR System to the Program System and vice versa. FHIR Data sent to the Program System identifies the need and provides data used for determining eligibility, enrollment, and provisioning of the social service. Program Data sent to the FHIR System identifies the social service addressing the social need and additional data for the FHIR System to track and monitor the provisioned service.

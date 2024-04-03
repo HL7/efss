@@ -1,67 +1,36 @@
-<div markdown="1" class="note-to-balloters">
-  
-This ballot is designated as US Realm specific. Impetus comes from the US Department of Health and Human Services’ strategy to provide a Whole Person Care approach.  It encompasses providing services and measuring their outcomes across the domains of clinical, behavioral, and social services (see https://cdo.hhs.gov/s/hhs-data-strategy). It is HHS’s judgment that the HL7 FHIR Standard is the best for delivering Whole Person Care solutions.  
+### HHS Data Strategy
 
-The ballot material begins from the perspective of subject matter experts and their requirements for providing and delivering Social Services.  Social Services represent concepts and pathways different from clinical services. For example, Social Services are generally delivered to a group of individuals such as a family or a household, not “patients.” Also, services are delivered at the local level by government authorities having their own rules for eligibility and enrollment. Concepts such as tribal membership and immigrant status may also be required. 
+From the HHS Data Strategy document, "Data is available, accessible, timely, equitable, meaningfully usable, and protected – and being actively used by HHS, our partners, and the public to realize HHS’ mission."
 
-Given our understanding of social service requirements, the ballot attempts to provide an approach using FHIR to enable Whole Person Care. The authors are cognizant of the backward compliance requirement for existing FHIR solutions. 
+* Cultivate Data Talent
+* **Foster Data Sharing**
+* Integrate Administrative Data into Program Operations
+* **Enable Whole-Person Care Delivery by Connecting Human Services Data**
+* **Responsibly Leverage Artificial Intelligence﻿**
 
-The Health and Human Services Working Group has designated this version of the ballot as an Informative Ballot for Comment. Constructive feedback has been received from the HL7 community about various approaches. We welcome even more feedback during the ballot review process. 
+ [HHS Data Vision](https://cdo.hhs.gov/s/hhs-data-strategy "HHS Data Vision")
 
-Our objective has been the enhancement of FHIR to serve the delivery of Whole Person Care. This is our initial recommendation for an approach and it may change with further input. An Informative Ballot for Comment allows us to receive input while providing flexibility to adjust the present path. 
+### Enhancing FHIR 
 
-</div>
+#### Opportunity
+Also from the HHS Data Strategy document (1):  
+
+"Human services lags health care in the availability, interoperability, and electronic exchange of data, particularly at the point of care. **There is a need for more comprehensive data standards**; freely available, standard taxonomies for human services provider information; better tools to manage consent, map household relationships, and perform matching and linkage; expanded provider onboarding; and aligned incentives and requirements to stimulate data flows. Interoperability improvements would significantly enhance case management, coordinated care and service delivery, closed loop screening and referral with “warm handoffs” between providers, expedited enrollment into benefits and service programs, and enable more efficient and equitable program design and delivery. Collectively, these advances would improve participants’ experience and access to services. The 2009 HITECH Act and CMS’s Meaningful Use program invested tens of billions of dollars in interoperable health data exchange; in the absence of commensurate investment in human services data exchange, progress can nonetheless be made. In light of the extensive health and public health common data standards development in recent decades and the need for cross-sector data sharing to deliver integrated services, human services data must become interoperable with health data, building from common data standards such as the U.S. Core Data for Interoperability (USCDI)."
 
 
-### Introduction
-The Enhancing FHIR to Address Social Services and Social Determinants Project seeks to extend the use of FHIR to support Social Services more effectively and efficiently. The HL7 Gravity Accelerator Program has done significant work in the context of social domains. This guide leverages their work and is a Companion Guide to the Gravity Project’s SDOH Clinical Care 2.1 Implementation Guide.
-This project's objective is to reduce some of the barriers faced to effectively and efficiently delivering FHIR-based systems that will incorporate social services and social determinants to improve outcomes.
-This Companion Guide is developed under the sponsorship of the HHS Working Group whose mission is “to provide a space for human services sector stakeholders and HL7 experts that focus on non-clinically oriented social risks and needs to define requirements, design, and validate HL7 Implementation Guides for interoperable human services data exchange”. The project and this Companion Guide are focused on the U.S. environment, the basic constructs and interaction patterns may well be applicable outside the U.S. realm.
-Enhancing FHIR for Social Services Companion Guide is not meant to be an exhaustive closed loop referral standard between a Community Based Organization (or similar Social Services actor) and a Program (such as ACF’s TANF program, HUDs housing programs) or process standard. There is lots of work already being done and to be done to provide such a complete standard, but it is beyond the scope of this IG. This IG will offer a an enhanced FHIR framework in which such work for this work in the future.
+#### Aspiration
+"Real-time, relevant data and data-driven insights are available to human services practitioners, health care providers, facilities/programs, and state, Tribal, local, and territorial governments to establish a whole-person and whole-family view of wellness and needs; seamlessly connect people with needed support services; proactively predict future needs and better address them at an individual and system level; effectively manage programs and facilities; evaluate the effectiveness and value of service provision at a local and macro level; and more equitably and efficiently plan and allocate resources." (1)
 
-### How to Read This Guide
-It is expected that the ballot will be reviewed by subject matter experts in the Social Services domain, FHIR architects and implementers, and those providing Whole Person Care solutions. Terms used in the different domains may not be familiar to all and for that, a glossary is provided. It is recommended that all readers familiarize themselves with the terms before reading the document. Finally, the table below shows what content is directed to Subject Matter Experts and what is directed to the more technical community.
 
-|Section|Description|Audience|
-|---|---|---|
-Glossary |List of terms used in this guide and a definition of the term. The terms may have meanings specific to Social Services domains or their use in this Guide. |General
-Background |The approach we developed to evaluate the material in this guide as well as what is considered in scope and out-of-scope.|General
-Use Cases |The work product developed is driven by Use Cases. Two representative Use Cases are provided to provide context for the technical material.|General
-Guidance – Design and Evaluation |To meet the objective of providing recommendations for Enhancing FHIR, this section introduces the various designs for potential enhancements that were evaluated. |General
-Guidance - Implementer |Based on requirements, this presents a Social Services Domain Analysis Model (SS DAM).|Technical 
-FHIR Analysis Model |The FHIR compliant model represents a FHIR implementation of of SS DAM.|Technical
-FHIR Realization Model |The recommendation of the FHIR Resources, Profiles, and Extensions for the a version of FHIR R5.|Technical
-Artifacts |Specifications for FHIR Resources, Profiles, and Extensions contained in the FHIR Realization Model.|Technical
-Artifacts – Downloads |Examples of persona data for Use cases for FHIR Realization Model.|Technical|
+#### Develop Data Standards
+"Ensure full human services representation in HHS and external standards-development bodies. **Identify and prioritize gaps in standards**, use cases, infrastructure (i.e., cloud systems, retention), and policy/governance (i.e., consent management, household relationship mapping) based on HHS, ecosystem, and end-user priorities. (1)
 
-### Companion Guide Scope
-The diagram below presents the Gravity Conceptual Model. It illustrates the scope of the Companion Guide and how it augments the most recent Gravity Conceptual Model in the SDOH Clinical Care Implementation Guide. To separate the concerns, the  Program System, on the left of the diagram, is responsible for enrollment in the social service(s).  This assumes that the Program System may or may not be a FHIR-based system. To support this position, over $400 billion of Social Services were delivered by just 3 separate Federal U. S. agencies in 2022 using non-FHIR Systems addressing housing insecurity, food insecurity, and temporary financial security.
+"Partner with standards setting organizations to strategically develop human services standards, use cases, and tools that address the most critical gaps, **including creating USCDI+ data set standards to support human services programs**.
 
-![Scope](workflow_integration.png)
+"Coordinate with federal partners to ensure human services standards and taxonomies are open and accessible to implementers."
 
-The system depicted on the right is a FHIR System that provides Whole Person Care. It represents the SDOH Clinical Care Implementation Guide.
+### FHIR and Social Services
+As part of our initial investigations, we identified several gaps and difficulties implementers and users were encountering applying FHIR Standards in Social Service environments.  Within this guide - we have highlighted gaps and proposed approaches to resolving these gaps.
 
-The Program System depicted on the left may or may not be FHIR-based. The assumption has been made that it is not an FHIR-based system. To support this assumption, in the United States, just three federal agencies delivered over $400 billion of Social Services in 2022 using non-FHIR systems to address housing and food insecurity and temporary financial security.
-
-### Out of Scope ##
-To deliver a solution for providing WPC in an operational environment is a complex endeavor. This Guide does not address other necessary functional requirements.  
-
-**Implementation of Workflow:** This Guide does not attempt to define an implementation approach for exchanging data between the FHIR-based system and the Agency System. Several patterns are available and analysis and recommendations will be deferred to a later publication.   
-
-**Eligibility for a Social Services Program:** Some FHIR systems can identify the appropriate specific program to address the specific social need or risk. This specific version of the Companion Guide assumes that the Program System will determine the appropriate social service based on its eligibility rules. Future versions may include the scope where computable eligibility requirements may be available to the FHIR system and recommendations for specific social services may be recommended.
-
-A FHIR system capable of determining eligibility for Social Services would be beneficial. This would increase the efficiency for all parties. However, this will be considered in future versions.
-
-**Privacy Policies:** It is assumed that data can flow freely and unencumbered between the FHIR System and the Program System as the implementation of Privacy Policies is out of scope. However, consideration of Privacy Policies will need to be considered in the future.
-
-In the social care space, the word “Patient” has a very specific meaning. It has been identified by the project, as well as others, that not only is the use of this term inaccurate and polarizing in the domains with which we are trying to collaborate, but it may have potential legal concerns as well. This project will continue to collect supporting information for this issue, but it is out of the scope of this work to address it here. 
-
-### Dependencies on Other IGs
-
-|Guidance Document |Version |Dependency|
-|---|---|---|
-|Gravity SDOH Clinical Care Implementation Guide |2.1|
-|FHIR |Release 4.0.1||
-|HL7 Domain Analysis Model: Patient Centered Care Team,|Release 1.0|
-|Others TBD||
-
+**Footnote**
+1. From the HHS Data Strategy document

@@ -87,42 +87,9 @@ parameters:
 pages:
   index.md:
     title: Enhancing FHIR for Social Services
-  rationale.md:
-    title: Rationale  
-  hudusecase.md:
-    title: HUD Consumer Use Case 
-  tanfusecase.md:
-    title: TANF Consumer Use Case
-  hudprogramusecase.md:
-    title: HUD Program Use Case
-  tanfprogramusecase.md:
-    title: TANF Program Use Case
-  glossary.md:
-    title: Glossary
-  approach.md:
-    title: Approach
-  logical.md:
-    title: Social Services Domain Model
-  domain.md:
-    title:  FHIR Analysis Model
-  fhir.md:
-    title: FHIR Realization Model
         
 menu:
   Home: index.html
-  Rationale: rationale.html
-  Use Cases:
-    HUD Consumer Use Case: hudusecase.html 
-    TANF Consumer Use Case: tanfusecase.html
-    HUD Program Use Case: hudprogramusecase.html 
-    TANF Program Use Case: tanfprogramusecase.html 
-  Models:   
-    Approach: approach.html
-    Social Services Domain Model: logical.html
-    FHIR Analysis Model: domain.html
-    FHIR Realization Model: fhir.html 
-  Glossary: glossary.html
-  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
